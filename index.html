@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naelle Phan | Portfolio — IA en Santé & Mathématiques Appliquées</title>
+  <meta name="description" content="Portfolio de Naelle Phan, étudiante en Master MIAS (Centrale Lille & ILIS Univ. Lille) et diplômée en Mathématiques-Informatique (UHA). Recherche stage M1 de 5 mois en IA en Santé dès mars 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3.0">
+  <link rel="icon" type="image/png" href="cropped-logo-site-V3.png">
+</head>
+<body>
+
+  <!-- Background decorative light glow circles (strictly soft pastel / no darks) -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Announcement Bar / Availability Header -->
+  <div class="top-banner">
+    <div class="top-banner-content">
+      <span class="status-indicator"><span class="pulse-dot"></span></span>
+      <span class="banner-text"><strong>Recherche active</strong> : Stage M1 de 5 mois (dès mars 2027) & Alternance Master 2 (2027-2028) en <strong>IA en Santé</strong> & <strong>Data Science</strong></span>
+      <a href="#contact" class="banner-link">Me contacter →</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Naelle Phan - Accueil">
+        <span class="brand-monogram">NP</span>
+        <div class="brand-identity">
+          <span class="brand-name">Naelle Phan</span>
+          <span class="brand-tag">Master MIAS · Centrale Lille</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#formations" class="nav-link">Formations</a></li>
+          <li><a href="#experiences" class="nav-link">Expériences</a></li>
+          <li><a href="#projets" class="nav-link">Projets</a></li>
+          <li><a href="#competences" class="nav-link">Compétences</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm" title="Télécharger le CV au format PDF">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Mon CV (PDF)</span>
+        </a>
+        <a href="#contact" class="btn btn-primary-pink btn-sm">
+          <span>Échanger</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+        <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-chip">✨ Centrale Lille × ILIS Univ. Lille</span>
+            <span class="eyebrow-sub">Licence Mathématiques & Info</span>
+          </div>
+
+          <h1 class="hero-title">
+            Allier la rigueur des <span class="highlight-pink">Mathématiques</span> à la puissance de l'<span class="highlight-pink">IA</span> pour réinventer la <span class="highlight-rose">Santé</span>.
+          </h1>
+
+          <p class="hero-description">
+            Étudiante en <strong>Master MIAS</strong> (Centrale Lille × ILIS) et diplômée en <strong>Math-Info</strong>. J'associe modélisation théorique et intelligence artificielle pour concevoir des solutions fiables, explicables et éthiques au service du milieu hospitalier.
+          </p>
+
+          <!-- Direct Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projets" class="btn btn-primary-pink btn-lg">
+              <span>Découvrir mes projets</span>
+              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-pink btn-lg">
+              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Consulter mon CV</span>
+            </a>
+            <button class="btn btn-pill-soft copy-contact-btn" data-copy="naelle.phan@gmail.com" title="Copier mon email">
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>Copier email</span>
+            </button>
+          </div>
+
+          <!-- Quick Meta Strip -->
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <span class="meta-bullet"></span>
+              <span><strong>Mobilité :</strong> Lille (59) & Haut-Rhin (68) · France entière</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-bullet"></span>
+              <span><strong>Permis B :</strong> Véhiculée</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-bullet"></span>
+              <span><strong>Recherche :</strong> Stage M1 (mars 2027) & Alternance M2</span>
+            </div>
+          </div>
+
+          <!-- Minimalist Recruiter Search Bar Widget with Client-Side AI (Inspired by videoframe_3595.png) -->
+          <div class="pink-search-widget" id="recruiter-search-widget" aria-label="Assistant IA Recruteur et Recherche de profil">
+            
+            <div class="search-widget-topbar">
+              <span class="ai-status-badge">
+                <span class="ai-status-dot"></span>
+                <span>Assistant IA Profil · Posez vos questions en direct</span>
+              </span>
+            </div>
+
+            <div class="search-pill-container">
+              <div class="search-pill-bar" id="search-pill-bar">
+                <span class="search-magnifier-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6e1820" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </span>
+                <input 
+                  type="text" 
+                  class="search-pill-input" 
+                  id="recruiter-search-input" 
+                  placeholder="Posez une question à l'IA (stage, pancréas, SVD, C++, atouts...)" 
+                  aria-label="Posez une question à l'IA sur le profil de Naelle Phan" 
+                  autocomplete="off"
+                >
+                <button class="search-clear-btn" id="search-clear-btn" aria-label="Effacer la recherche" title="Effacer">✕</button>
+              </div>
+
+              <!-- Quick Suggestion Chips below the search pill -->
+              <div class="search-chips-row" id="search-chips-row">
+                <button class="search-chip-pill active" data-query="hopital">🏥 Hôpital & SIH</button>
+                <button class="search-chip-pill" data-query="maths">📐 Maths & Algorithmes</button>
+                <button class="search-chip-pill" data-query="stage">🎯 Stage M1 & Alternance M2</button>
+                <button class="search-chip-pill" data-query="pancreas">🔬 Pancréas (28p)</button>
+                <button class="search-chip-pill" data-query="atouts">⚡ 3 Atouts clés</button>
+                <button class="search-chip-pill" data-query="mobilite">📍 Mobilité & Permis</button>
+              </div>
+            </div>
+
+            <!-- Dynamic AI Answer Card matching the search -->
+            <div class="search-answer-card" id="search-answer-card" aria-live="polite">
+              <div class="answer-card-header">
+                <span class="answer-sparkle">🤖</span>
+                <span class="answer-matched-title" id="answer-matched-title">Profil Hôpital & Systèmes d'Information (SIH)</span>
+                <span class="answer-ai-badge">Réponse IA</span>
+              </div>
+              <p class="answer-card-text" id="answer-card-text">
+                Formée aux SIH, aux ontologies cliniques (OWL, SWRL) et aux SADM. Autrice d'un système hybride d'aide au diagnostic pancréatique encadré par le Pr. Hammadi (Centrale Lille).
+              </p>
+              <div class="answer-card-actions" id="answer-card-actions">
+                <a href="Cancer_du_pancreas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-sm">
+                  <span>🏥 Voir mon rapport Pancréas 28p (PDF)</span>
+                </a>
+                <a href="#formations" class="btn btn-soft-pink btn-sm">
+                  <span>🏛️ Découvrir mon Master MIAS</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase with 3D Interactive Student Badge (#2) -->
+        <div class="hero-visual" id="hero-visual-showcase">
+          
+
+          <!-- 3D Student Badge Card Scene -->
+          <div class="badge-3d-scene" id="badge-scene" aria-label="Carte étudiante interactive">
+            <div class="badge-3d-card" id="student-badge-card">
+              
+              <!-- RECTO (Face Avant) -->
+              <div class="badge-face badge-front">
+                <div class="badge-strap-clip">
+                  <span class="strap-ring"></span>
+                </div>
+                <div class="badge-hologram-line"></div>
+
+                <div class="badge-card-header">
+                  <div class="badge-logos-duo">
+                    <img src="logo-centralelille.png" alt="Centrale Lille" class="badge-logo-img">
+                    <span class="badge-duo-x">×</span>
+                    <img src="logo-ulille.png" alt="ILIS Université de Lille" class="badge-logo-img">
+                  </div>
+                  <span class="badge-pill-tag">M1 MIAS 2026-2028</span>
+                </div>
+
+                <div class="badge-card-main">
+                  <div class="badge-portrait-frame">
+                    <img src="naelle-phan.jpg" alt="Photo professionnelle de Naelle Phan" class="badge-portrait-img">
+                    <span class="badge-live-pulse" title="Étudiante active en M1 · En écoute active"></span>
+                  </div>
+                  <div class="badge-student-meta">
+                    <h3 class="badge-student-name">Naelle Phan</h3>
+                    <p class="badge-student-title">Master Management de l'IA en Santé</p>
+                    <p class="badge-student-sub">Centrale Lille & Faculté d'Ingénierie de la Santé</p>
+                    <div class="badge-specs">
+                      <span class="spec-chip">Licence Math-Info</span>
+                      <span class="spec-chip">IA & Santé</span>
+                      <span class="spec-chip">Mulhouse / Lille</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="badge-card-footer">
+                  <div class="badge-stage-status">
+                    <span class="dot-live"></span>
+                    <span>Stage M1 : 5 mois dès mars 2027</span>
+                  </div>
+                  <div class="badge-footer-btns">
+                    <button class="badge-flip-trigger" id="flip-to-back-btn" title="Cliquer pour voir le verso du badge">
+                      <span>Verso ↻</span>
+                    </button>
+                  </div>
+                </div>
+              </div> <!-- /badge-front -->
+
+              <!-- VERSO (Face Arrière) -->
+              <div class="badge-face badge-back">
+                <div class="badge-strap-clip">
+                  <span class="strap-ring"></span>
+                </div>
+
+                <div class="badge-back-top">
+                  <div class="back-title-wrap">
+                    <span class="back-badge-emoji">🪪</span>
+                    <span class="back-badge-title">Mes Coordonnées & Disponibilité</span>
+                  </div>
+                  <button class="badge-flip-trigger" id="flip-to-front-btn" title="Retourner vers le recto">
+                    <span>Recto ↺</span>
+                  </button>
+                </div>
+
+                <div class="badge-back-info-list">
+                  <div class="back-info-item">
+                    <span class="back-item-label">Ma recherche :</span>
+                    <strong class="back-item-val highlight-rose">Stage M1 (5 mois) & Alternance M2</strong>
+                  </div>
+                  <div class="back-info-item">
+                    <span class="back-item-label">Disponibilité :</span>
+                    <strong class="back-item-val">Mars 2027</strong>
+                  </div>
+                  <div class="back-info-item">
+                    <span class="back-item-label">Ma mobilité :</span>
+                    <span class="back-item-val">Lille (59), Haut-Rhin (68) · France entière</span>
+                  </div>
+                  <div class="back-info-item">
+                    <span class="back-item-label">Email :</span>
+                    <a href="mailto:naelle.phan@gmail.com" class="back-item-link">naelle.phan@gmail.com</a>
+                  </div>
+                  <div class="back-info-item">
+                    <span class="back-item-label">Téléphone :</span>
+                    <a href="tel:0638663256" class="back-item-link">06 38 66 32 56</a>
+                  </div>
+                  <div class="back-info-item">
+                    <span class="back-item-label">LinkedIn :</span>
+                    <a href="https://linkedin.com/in/naelle-phan" target="_blank" rel="noopener noreferrer" class="back-item-link">linkedin.com/in/naelle-phan</a>
+                  </div>
+                </div>
+
+                <div class="badge-back-barcode-box">
+                  <div class="fake-barcode">||| | ||||| || |||||| | |||| ||| |||||</div>
+                  <span class="barcode-sub">ID ÉTUDIANTE : NP-CENTRALELILLE-2026</span>
+                </div>
+
+                <div class="badge-back-actions">
+                  <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-sm btn-block">
+                    <span>Télécharger mon CV (PDF)</span>
+                  </a>
+                </div>
+              </div>
+
+            </div> <!-- /student-badge-card -->
+          </div> <!-- /badge-3d-scene -->
+        </div> <!-- /hero-visual -->
+      </div> <!-- /hero-container -->
+    </section> <!-- /hero-section -->
+
+
+    <!-- Key Highlights / Stat Strip -->
+    <section class="stats-section">
+      <div class="container stats-container">
+        <div class="stat-card">
+          <span class="stat-number">Master MIAS</span>
+          <span class="stat-label">Centrale Lille & Univ. Lille (ILIS)</span>
+          <span class="stat-detail">Management de l'IA en Santé</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Licence Math-Info</span>
+          <span class="stat-label">Mention Assez Bien</span>
+          <span class="stat-detail">Université de Haute-Alsace (UHA)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3 Mémoires Rédigés</span>
+          <span class="stat-label">Rapports scientifiques complets</span>
+          <span class="stat-detail">SADM, SVD, Théorie des Distributions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2+ Ans en Entreprise</span>
+          <span class="stat-label">CDI temps partiel étudiant</span>
+          <span class="stat-detail">Hyper U & Burger King</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À Propos (Épurée & Percutante) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Profil & Ambition</span>
+        </div>
+        <h2 class="section-title">Allier rigueur <span class="highlight-pink">théorique</span> et impact <span class="highlight-pink">clinique</span></h2>
+        <p class="section-subtitle">Diplômée d'une Licence Math-Info (UHA) et étudiante en Master MIAS (Centrale Lille × ILIS), je recherche activement un <strong>stage M1 de 5 mois dès mars 2027</strong> ainsi qu'une <strong>alternance en Master 2 (2027-2028)</strong> au service de l'IA et des données de santé.</p>
+        
+        <div class="about-pillars-row">
+          <div class="about-pillar-card">
+            <div class="pillar-top-icon">🎯</div>
+            <h3 class="pillar-heading">Stage M1 & Alternance M2</h3>
+            <p class="pillar-lead"><strong>Stage 5 mois (mars 2027) · Alternance M2</strong></p>
+            <p class="pillar-text">Data Science médicale, IA d'aide à la décision clinique ou gestion de projet SIH. Mobile Lille (59), Alsace (68) & France.</p>
+          </div>
+
+          <div class="about-pillar-card">
+            <div class="pillar-top-icon">📐</div>
+            <h3 class="pillar-heading">Socle Math-Info</h3>
+            <p class="pillar-lead"><strong>Rigueur & Algorithmes</strong></p>
+            <p class="pillar-text">Algèbre spectrale (SVD), analyse fonctionnelle, ontologies OWL/SWRL sous Protégé, et programmation Python & C++.</p>
+          </div>
+
+          <div class="about-pillar-card">
+            <div class="pillar-top-icon">💼</div>
+            <h3 class="pillar-heading">Maturité Terrain</h3>
+            <p class="pillar-lead"><strong>2+ ans en CDI</strong></p>
+            <p class="pillar-text">Emploi étudiant mené en continu avec mes études, complété par 3 ans de tutorat en maths et 3 Nuits de l'Info.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Formations & Écoles (avec Logos) -->
+    <section class="section formations-section" id="formations">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Cursus Académique</span>
+        </div>
+        <h2 class="section-title">Mon <span class="highlight-pink">Cursus Académique</span> & Écoles</h2>
+        <p class="section-subtitle">Un parcours combinant rigueur mathématique, algorithmes d'apprentissage et culture des systèmes hospitaliers.</p>
+        <div class="timeline-cards">
+
+          <!-- Formation 1 : Master MIAS (Centrale Lille & Univ. Lille ILIS) -->
+          <div class="experience-card education-card featured-edu">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-box-lg" title="Centrale Lille">
+                  <img src="logo-centralelille.png" alt="Logo officiel Centrale Lille" class="institution-logo">
+                </div>
+                <div class="logo-divider">+</div>
+                <div class="logo-box logo-box-lg" title="Université de Lille - Faculté d'Ingénierie de la Santé (ILIS)">
+                  <img src="logo-ulille.png" alt="Logo officiel Université de Lille - ILIS" class="institution-logo">
+                </div>
+              </div>
+              <div class="card-status-badge badge-active">
+                <span class="dot-live"></span>
+                <span>En cours (2026 – 2028)</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Master Management de l'Intelligence Artificielle en Santé (MIAS)</h3>
+                <span class="card-period">Septembre 2026 – Septembre 2028</span>
+              </div>
+              <p class="card-institution">
+                <strong>Centrale Lille</strong> & <strong>Faculté d'Ingénierie de la Santé (ILIS)</strong> — Université de Lille
+              </p>
+              <p class="card-summary">
+                Formation co-accréditée par Centrale Lille et la Faculté d'Ingénierie de la Santé (ILIS), associant compétences en intelligence artificielle, culture des systèmes hospitaliers et gestion de projets de santé.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">🤖 Machine Learning & Ontologies</span>
+                <span class="glance-badge">🏥 SIH, Épidémiologie & RGPD Santé</span>
+                <span class="glance-badge">📊 Modélisation UML / SysML</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer le programme ▴" data-closed-text="＋ Voir le programme détaillé (3 piliers) ▾">
+                <span class="toggle-text">＋ Voir le programme détaillé (3 piliers) ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="formation-pillars-grid">
+                    <div class="pillar-box">
+                      <div class="pillar-title"><span class="pillar-emoji">🤖</span> IA, Data & Technologies de pointe</div>
+                      <ul class="pillar-list">
+                        <li>Machine Learning & Deep Learning appliqués à la santé</li>
+                        <li>IA Symbolique : Ontologies médicales (OWL, SPARQL, SWRL) & NLP clinique</li>
+                        <li>Intelligence Artificielle Distribuée (IAD) & systèmes multi-agents</li>
+                        <li>Imagerie médicale & Deep Learning pour l'inspection/traitement d'images</li>
+                        <li>Technologies ascendantes : IoT santé, robotique/cobotique, Big Data, RA/RV</li>
+                        <li>Systèmes Intelligents d'Aide à la Décision (SADM) & IA explicable</li>
+                      </ul>
+                    </div>
+
+                    <div class="pillar-box">
+                      <div class="pillar-title"><span class="pillar-emoji">🏥</span> Santé & Systèmes Hospitaliers</div>
+                      <ul class="pillar-list">
+                        <li>Pilotage intelligent des systèmes hospitaliers (SIH) & interopérabilité</li>
+                        <li>Épidémiologie, données de santé & médecine de précision</li>
+                        <li>Logistique hospitalière et pharmaceutique & aide à la décision collaborative</li>
+                        <li>IA et prévention des maladies & IA et aide à la personne</li>
+                        <li>Cadre juridique et éthique de l'IA en santé (RGPD données de santé, éthique médicale)</li>
+                        <li>Réglementation et évaluation des Dispositifs Médicaux Numériques (DMN)</li>
+                      </ul>
+                    </div>
+
+                    <div class="pillar-box">
+                      <div class="pillar-title"><span class="pillar-emoji">📊</span> Management & Innovation</div>
+                      <ul class="pillar-list">
+                        <li>Management en santé et pilotage stratégique de projets innovants IA</li>
+                        <li>Accompagnement du passage de la transformation numérique vers l'IA</li>
+                        <li>Ingénierie de la modélisation des processus complexes : UML & SysML</li>
+                        <li>Complexité, optimisation et ordonnancement dans les établissements de santé</li>
+                        <li>Gouvernance, valorisation économique et conduite du changement</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer-tags">
+                <span class="tag-accent">Centrale Lille</span>
+                <span class="tag-accent">Univ. Lille (ILIS)</span>
+                <span class="tag-accent">Machine Learning & Deep Learning</span>
+                <span class="tag-accent">Ontologies OWL / SWRL</span>
+                <span class="tag-accent">SIH & Réglementation</span>
+                <span class="tag-accent">Modélisation UML/SysML</span>
+                <span class="tag-accent">Imagerie & IoT Santé</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formation 2 : Licence Mathématiques appliquées (UHA Mulhouse) -->
+          <div class="experience-card education-card">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-box-lg" title="Université de Haute-Alsace - Faculté des Sciences et Techniques de Mulhouse">
+                  <img src="cropped-logo-site-V3.png" alt="Logo Université de Haute-Alsace (UHA Mulhouse)" class="institution-logo">
+                </div>
+              </div>
+              <div class="card-status-badge badge-success">
+                <span>Diplômée · Mention Assez Bien</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Licence Mathématiques appliquées (Mineure Informatique)</h3>
+                <span class="card-period">Septembre 2023 – Juin 2026</span>
+              </div>
+              <p class="card-institution">
+                <strong>Université de Haute-Alsace (UHA)</strong> — Faculté des Sciences et Techniques, Mulhouse
+              </p>
+              <p class="card-summary">
+                Cursus universitaire exigeant dispensant une formation fondamentale en mathématiques pures et appliquées, doublée d'un socle informatique solide.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">📐 Algèbre spectrale & SVD</span>
+                <span class="glance-badge">📜 Distributions de Schwartz</span>
+                <span class="glance-badge">💻 C++ Moderne (POO & STL)</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer le détail ▴" data-closed-text="＋ Détail des modules mathématiques & informatiques ▾">
+                <span class="toggle-text">＋ Détail des modules mathématiques & informatiques ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="skills-highlight-grid">
+                    <div class="highlight-item">
+                      <span class="hi-label">📐 Mathématiques :</span>
+                      <span>Algèbre linéaire & bilinéaire, Décomposition en Valeurs Singulières (SVD), Théorème spectral, Probabilités, Statistiques inférentielles, Analyse fonctionnelle & Théorie des distributions.</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="hi-label">💻 Informatique :</span>
+                      <span>Programmation C++ (POO, pointeurs, structures de données STL, gestion mémoire), Modélisation conceptuelle de bases de données (MCD/MLD), Analyse de complexité et optimisation.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer-tags">
+                <span class="tag-accent">UHA Mulhouse</span>
+                <span class="tag-accent">Algèbre Spectrale</span>
+                <span class="tag-accent">SVD & ACP</span>
+                <span class="tag-accent">C++ POO</span>
+                <span class="tag-accent">Bases de Données (MCD/MLD)</span>
+                <span class="tag-accent">LaTeX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formation 3 : Baccalauréat Général (Lycée Scheurer Kestner) -->
+          <div class="experience-card education-card">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-school-badge" title="Lycée Scheurer Kestner — Thann">
+                  <span class="school-initials">LSK</span>
+                </div>
+                <div class="exp-role-meta">
+                  <span class="company-name">Lycée Scheurer Kestner</span>
+                  <span class="company-loc">Thann (68)</span>
+                </div>
+              </div>
+              <div class="card-status-badge badge-success">
+                <span>Diplômée · Mention Bien</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Baccalauréat Général (Mention Bien)</h3>
+                <span class="card-period">Septembre 2020 – Juin 2023</span>
+              </div>
+              <p class="card-institution">
+                <strong>Lycée Scheurer Kestner</strong> — Thann
+              </p>
+              <p class="card-summary">
+                Baccalauréat scientifique préparant aux études supérieures sélectives en mathématiques pures et appliquées.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">📐 Spécialité Mathématiques</span>
+                <span class="glance-badge">🔬 Spécialité Physique-Chimie</span>
+                <span class="glance-badge">🌍 Spé. Anglais Monde Contemporain (AMC)</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer le détail ▴" data-closed-text="＋ Détail des enseignements de spécialité ▾">
+                <span class="toggle-text">＋ Détail des enseignements de spécialité ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="skills-highlight-grid">
+                    <div class="highlight-item">
+                      <span class="hi-label">📐 Spécialité Mathématiques (Terminale) :</span>
+                      <span>Analyse, calcul différentiel & intégral, suites numériques, probabilités combinatoires, géométrie vectorielle.</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="hi-label">🔬 Spécialité Physique-Chimie (Terminale) :</span>
+                      <span>Mécanique newtonienne, transferts thermiques, signaux & ondes, chimie des solutions et synthèse organique.</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="hi-label">🌍 Spécialité Anglais Monde Contemporain (Première) :</span>
+                      <span>Enjeux géopolitiques, sociétaux et scientifiques du monde anglophone, analyse critique et communication orale avancée.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer-tags">
+                <span class="tag-accent">Mention Bien</span>
+                <span class="tag-accent">Spé. Mathématiques</span>
+                <span class="tag-accent">Spé. Physique-Chimie</span>
+                <span class="tag-accent">Spé. Anglais (AMC)</span>
+                <span class="tag-accent">Thann (68)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Expériences Professionnelles & Terrain (avec Logos) -->
+    <section class="section experiences-section" id="experiences">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Expériences de Terrain</span>
+        </div>
+        <h2 class="section-title">Expériences <span class="highlight-pink">Professionnelles</span> & Associatives</h2>
+        <p class="section-subtitle">
+          Chacune de ces expériences professionnelles a été exercée en parallèle de mes études universitaires, démontrant constance, endurance et sens des responsabilités.
+        </p>
+
+        <div class="experiences-grid">
+
+          <!-- Expérience 1 : Hyper U Boulangerie -->
+          <div class="experience-card professional-card">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-box-lg" title="Hyper U Burnhaupt-le-Haut">
+                  <img src="hyper-u-logo-transparent-png-875910.png" alt="Logo Hyper U" class="institution-logo">
+                </div>
+                <div class="exp-role-meta">
+                  <span class="company-name">Hyper U</span>
+                  <span class="company-loc">Burnhaupt-le-Haut (68)</span>
+                </div>
+              </div>
+              <div class="card-status-badge badge-active">
+                <span>CDI Temps partiel · 2 ans+</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Vendeuse en boulangerie</h3>
+                <span class="card-period">Mai 2024 – Août 2026 (2 ans et 3 mois)</span>
+              </div>
+              <p class="card-summary">
+                Tenue et gestion opérationnelle du rayon boulangerie en CDI à temps partiel mené en parallèle de mes études universitaires.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">⏱️ CDI 2 ans et 3 mois</span>
+                <span class="glance-badge">👥 Relation client sous flux</span>
+                <span class="glance-badge">🧺 Gestion caisse & stocks</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les missions ▴" data-closed-text="＋ Missions détaillées ▾">
+                <span class="toggle-text">＋ Missions détaillées ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <ul class="task-list">
+                    <li>Gestion autonome de la caisse, encaissements et fidélisation d'une clientèle exigeante sous fort flux.</li>
+                    <li>Mise en valeur des produits, réapprovisionnement rigoureux et gestion des stocks en flux tendu.</li>
+                    <li>Application scrupuleuse des normes sanitaires, d'hygiène alimentaire et de traçabilité.</li>
+                    <li>Organisation du travail en autonomie complète lors des créneaux d'ouverture et de fermeture.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer-tags">
+                <span class="tag-accent">Rigueur opérationnelle</span>
+                <span class="tag-accent">Relation client</span>
+                <span class="tag-accent">Gestion de caisse</span>
+                <span class="tag-accent">Gestion des stocks</span>
+                <span class="tag-accent">Autonomie</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expérience 2 : Hyper U Polyvalente Fleuriste & Rayons -->
+          <div class="experience-card professional-card">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-box-lg" title="Hyper U Burnhaupt-le-Haut">
+                  <img src="hyper-u-logo-transparent-png-875910.png" alt="Logo Hyper U" class="institution-logo">
+                </div>
+                <div class="exp-role-meta">
+                  <span class="company-name">Hyper U</span>
+                  <span class="company-loc">Burnhaupt-le-Haut (68)</span>
+                </div>
+              </div>
+              <div class="card-status-badge badge-neutral">
+                <span>Emploi Saisonnier · Été 2024</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Polyvalente Fleuriste, Culturel, Techno & Bazar</h3>
+                <span class="card-period">Août 2024 – Septembre 2024 (1 mois)</span>
+              </div>
+              <p class="card-summary">
+                Conseil client et gestion polyvalente multi-rayons : espace floral, librairie/culturel, high-tech et bazar.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">🌸 Fleuriste & Végétaux</span>
+                <span class="glance-badge">📚 Rayon Culturel & Techno</span>
+                <span class="glance-badge">🛍️ Rayon Bazar</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les missions ▴" data-closed-text="＋ Missions détaillées ▾">
+                <span class="toggle-text">＋ Missions détaillées ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <ul class="task-list">
+                    <li>Accueil, écoute attentive et orientation des clients sur le floral, les livres, le multimédia et le bazar.</li>
+                    <li>Soins réguliers des végétaux, compositions florales et mise en valeur soignée des étalages.</li>
+                    <li>Gestion des réassorts, facing, contrôle de l'état des stocks et polyvalence continue entre rayons.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer-tags">
+                <span class="tag-accent">Polyvalence multi-rayons</span>
+                <span class="tag-accent">Fleuriste & Végétal</span>
+                <span class="tag-accent">Rayon Culturel & Techno</span>
+                <span class="tag-accent">Rayon Bazar</span>
+                <span class="tag-accent">Conseil client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expérience 3 : Burger King -->
+          <div class="experience-card professional-card">
+            <div class="card-header-bar">
+              <div class="org-logos-group">
+                <div class="logo-box logo-box-lg" title="Burger King Cernay">
+                  <img src="burger-king-logo-1969.webp" alt="Logo Burger King" class="institution-logo">
+                </div>
+                <div class="exp-role-meta">
+                  <span class="company-name">Burger King</span>
+                  <span class="company-loc">Cernay (68)</span>
+                </div>
+              </div>
+              <div class="card-status-badge badge-neutral">
+                <span>CDI Temps partiel · 7 mois</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3 class="card-title">Équipière polyvalente de restauration</h3>
+                <span class="card-period">Août 2023 – Mars 2024 (7 mois)</span>
+              </div>
+              <p class="card-summary">
+                Emploi en CDI mené avec dynamisme et réactivité durant la première année de licence.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">⚡ Gestion du rush</span>
+                <span class="glance-badge">🤝 Esprit d'équipe</span>
+                <span class="glance-badge">⏱️ 7 mois d'expérience</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les missions ▴" data-closed-text="＋ Missions détaillées ▾">
+                <span class="toggle-text">＋ Missions détaillées ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <ul class="task-list">
+                    <li>Exécution rapide des commandes en équipe lors des périodes de rush intense (comptoir et drive).</li>
+                    <li>Polyvalence entre la préparation des produits, l'accueil client et l'encaissement.</li>
+                    <li>Respect strict des standards d'hygiène, des délais de service et des procédures qualité de l'enseigne.</li>
+                    <li>Capacité à maintenir calme, réactivité et esprit de collaboration sous forte pression temporelle.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer-tags">
+                <span class="tag-accent">Gestion du stress & du rush</span>
+                <span class="tag-accent">Travail d'équipe</span>
+                <span class="tag-accent">Cadence soutenue</span>
+                <span class="tag-accent">Normes de qualité</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Engagements Associatifs & Pédagogiques -->
+        <div class="associative-strip">
+          <div class="strip-header">
+            <h3 class="strip-title">Engagements Associatifs, Pédagogie & Hackathons</h3>
+            <span class="strip-sub">Transmettre, encadrer et relever des challenges en équipe</span>
+          </div>
+
+          <div class="assoc-cards-row">
+            <div class="assoc-item">
+              <div class="assoc-icon">📐</div>
+              <div class="assoc-content">
+                <div class="assoc-head">
+                  <h4 class="assoc-title">Tutorat en Mathématiques</h4>
+                  <span class="assoc-date">2023 – 2026 (3 ans)</span>
+                </div>
+                <p class="assoc-loc">Haut-Rhin (68)</p>
+                <p class="assoc-desc">Accompagnement pédagogique et vulgarisation de concepts mathématiques auprès d'élèves.</p>
+              </div>
+            </div>
+
+            <div class="assoc-item">
+              <div class="assoc-icon">⚽</div>
+              <div class="assoc-content">
+                <div class="assoc-head">
+                  <h4 class="assoc-title">Coach Sportif</h4>
+                  <span class="assoc-date">2022 – 2024 (2 ans)</span>
+                </div>
+                <p class="assoc-loc">Stade Burnhauptois, Burnhaupt</p>
+                <p class="assoc-desc">Encadrement d'entraînements pour jeunes catégories : esprit d'équipe et transmission.</p>
+              </div>
+            </div>
+
+            <div class="assoc-item">
+              <div class="assoc-icon">🌙</div>
+              <div class="assoc-content">
+                <div class="assoc-head">
+                  <h4 class="assoc-title">La Nuit de l'Info</h4>
+                  <span class="assoc-date">Éditions 2023, 2024 & 2025</span>
+                </div>
+                <p class="assoc-loc">Hackathon National Étudiant</p>
+                <p class="assoc-desc">3 participations consécutives (environ 16h de nuit) : développement web agile en équipe sous contrainte de temps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section Projets de Recherche & Réalisations (PDFs intégrés) -->
+    <section class="section projects-section" id="projets">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Publications & Réalisations</span>
+        </div>
+        <h2 class="section-title">Projets de <span class="highlight-pink">Recherche</span> & Rapports Scientifiques</h2>
+        <p class="section-subtitle">
+          Découvrez mes travaux académiques approfondis en IA médicale, décomposition spectrale et mathématiques pures. Tous les mémoires sont disponibles en lecture et téléchargement PDF.
+        </p>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">Tous les projets (5)</button>
+          <button class="filter-btn" data-filter="sante">IA & Santé (1)</button>
+          <button class="filter-btn" data-filter="maths">Mathématiques & SVD (2)</button>
+          <button class="filter-btn" data-filter="code">Développement & Hackathon (2)</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1: FEATURED STAR PROJECT - Cancer du pancréas -->
+          <article class="project-card featured-project" data-category="sante">
+            <div class="featured-ribbon">⭐ Projet Phare Master MIAS</div>
+            <div class="project-card-layout">
+              <div class="project-visual-col">
+                <div class="project-img-frame">
+                  <img src="bordeaux-macos-folder.png" alt="Dossier macOS bordeaux de recherche IA & Santé" class="folder-cover-img">
+                  <div class="project-badge-overlay">
+                    <span class="badge-tag">Rapport 28 pages · PDF</span>
+                  </div>
+                </div>
+                <div class="authorship-box">
+                  <span class="authors-label">Auteurs :</span>
+                  <span class="authors-names">Naelle Phan & Alexis Robin</span>
+                  <span class="advisor-label">Sous la direction du :</span>
+                  <span class="advisor-name">Pr. Slim Hammadi (Centrale Lille)</span>
+                </div>
+              </div>
+
+              <div class="project-info-col">
+                <div class="project-meta-top">
+                  <span class="meta-tag tag-sante">🏥 IA Médicale & SADM</span>
+                  <span class="meta-tag tag-date">Septembre 2026</span>
+                  <span class="meta-tag tag-school">Centrale Lille & Univ. Lille ILIS</span>
+                </div>
+
+                <h3 class="project-title">
+                  Système d’Aide à la Décision Médicale pour les Lésions Kystiques du Pancréas
+                </h3>
+                <p class="project-subtitle-text">
+                  <em>De la modélisation ontologique symbolique sous Protégé (OWL, SPARQL, SWRL) à la fouille de données sous-symbolique sous Weka.</em>
+                </p>
+
+                <p class="project-desc">
+                  Conception d'un SADM hybride combinant ontologies OWL (Protégé) et fouille de données (Weka) pour assister l'orientation thérapeutique des lésions kystiques du pancréas.
+                </p>
+
+                <!-- Quick Glance Badges -->
+                <div class="card-glance-badges">
+                  <span class="glance-badge">📑 Rapport 28p (PDF)</span>
+                  <span class="glance-badge">🔬 10 cas cliniques réels</span>
+                  <span class="glance-badge">⚖️ Protégé + Weka</span>
+                </div>
+
+                <!-- Collapsible Drawer Toggle -->
+                <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Démarche scientifique & méthodologie ▾">
+                  <span class="toggle-text">＋ Démarche scientifique & méthodologie ▾</span>
+                  <span class="toggle-arrow">▾</span>
+                </button>
+
+                <div class="card-expand-drawer">
+                  <div class="drawer-inner-content">
+                    <div class="project-highlights-grid">
+                      <div class="hl-item">
+                        <strong>IA Symbolique (Protégé) :</strong> Création de l'ontologie clinique <code>OntoPLC</code>, formalisation de 10 cas patients types, requêtes sémantiques SPARQL et règles de déduction diagnostique et chirurgicale en SWRL.
+                       </div>
+                      <div class="hl-item">
+                        <strong>IA Sous-Symbolique (Weka) :</strong> Benchmark comparatif de classifieurs supervisés (J48, Random Forest, Naive Bayes, LMT), validation croisée k-fold, mise en évidence du surapprentissage et analyse fine des courbes ROC / AUC.
+                      </div>
+                    </div>
+
+                    <div class="project-tech-pills">
+                      <span class="tech-pill">Protégé</span>
+                      <span class="tech-pill">OWL</span>
+                      <span class="tech-pill">SPARQL</span>
+                      <span class="tech-pill">SWRL</span>
+                      <span class="tech-pill">Weka Explorer</span>
+                      <span class="tech-pill">Random Forest</span>
+                      <span class="tech-pill">Naive Bayes</span>
+                      <span class="tech-pill">J48</span>
+                      <span class="tech-pill">Courbes ROC / AUC</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="pancreas">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <span>Consulter la synthèse détaillée</span>
+                  </button>
+                  <a href="Cancer_du_pancreas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le rapport complet au format PDF">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    <span>Lire le rapport (PDF)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: SVD & Auto-encodeurs Linéaires -->
+          <article class="project-card standard-project" data-category="maths">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-math">📐 Mathématiques & IA</span>
+                <span class="meta-tag tag-date">2026 · L3 Maths</span>
+                <span class="meta-tag tag-school">UHA Mulhouse</span>
+              </div>
+              <h3 class="project-title">Singular Value Decomposition (SVD) et Auto-encodeurs Linéaires</h3>
+              <p class="project-subtitle-text">
+                <em>Équivalence mathématique et applications rigoureuses à la compression de données.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Mémoire démontrant formellement l'équivalence entre la SVD tronquée et l'espace latent appris par un auto-encodeur linéaire (Eckart-Young).
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">📐 Eckart-Young</span>
+                <span class="glance-badge">🤖 Auto-encodeurs</span>
+                <span class="glance-badge">🖼️ Compression d'images</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & démarche ▾">
+                <span class="toggle-text">＋ Points clés & démarche ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Démonstration du Théorème d'Eckart-Young-Mirsky pour l'approximation optimale de rang <i>k</i>.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Lien formel entre l'Analyse en Composantes Principales (ACP) et la projection sur valeurs singulières.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Applications empiriques à la compression d'images matricielles et à la réduction de dimension.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">Algèbre Spectrale</span>
+                    <span class="tech-pill">SVD Tronquée</span>
+                    <span class="tech-pill">Eckart-Young</span>
+                    <span class="tech-pill">Auto-encodeurs</span>
+                    <span class="tech-pill">ACP</span>
+                    <span class="tech-pill">LaTeX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Phan N., Auleley Moukagni N., Stiti A. (Dir. L. Lenotre)</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="svd">Détails</button>
+                <a href="SVD_&auto-encodeurs_lineaires.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm">
+                  <span>Mémoire (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Théorie des Distributions -->
+          <article class="project-card standard-project" data-category="maths">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-math">📐 Analyse Fonctionnelle</span>
+                <span class="meta-tag tag-date">2025 · L2 Maths</span>
+                <span class="meta-tag tag-school">UHA Mulhouse</span>
+              </div>
+              <h3 class="project-title">Recherche Théorique : La Théorie des Distributions</h3>
+              <p class="project-subtitle-text">
+                <em>Formalisation mathématique de l'impulsion de Dirac, dérivation faible et espaces de Sobolev.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Mémoire d'analyse pure formalisant l'impulsion de Dirac, la dérivation faible et les espaces de Sobolev pour les équations aux dérivées partielles.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">⚡ Impulsion de Dirac</span>
+                <span class="glance-badge">📜 Laurent Schwartz</span>
+                <span class="glance-badge">📐 Espaces de Sobolev</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & démarche ▾">
+                <span class="toggle-text">＋ Points clés & démarche ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Modélisation rigoureuse de la masse de Dirac <i>δ</i> et de la fonction marche de Heaviside.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Définition de la dérivation au sens faible par intégration par parties.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Introduction aux espaces de Sobolev <i>H<sup>s</sup></i>(ℝ) fondamentaux pour la résolution d'EDP physiques.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">Distributions de Schwartz</span>
+                    <span class="tech-pill">Espaces de Sobolev</span>
+                    <span class="tech-pill">Impulsion de Dirac</span>
+                    <span class="tech-pill">Topologie duale</span>
+                    <span class="tech-pill">LaTeX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Phan N., Auleley Moukagni N. (Dir. D. Panazzolo)</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="distributions">Détails</button>
+                <a href="Théorie-Distribution.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm">
+                  <span>Mémoire (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Agenda C++ -->
+          <article class="project-card standard-project" data-category="code">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-code">💻 Génie Logiciel</span>
+                <span class="meta-tag tag-date">2025</span>
+                <span class="meta-tag tag-school">Licence Informatique</span>
+              </div>
+              <h3 class="project-title">Développement d’un Agenda Interactif en C++</h3>
+              <p class="project-subtitle-text">
+                <em>Programmation orientée objet, gestion fine des structures de données et persistance.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Conception logicielle d'un agenda interactif en C++ avec structures de données STL, gestion d'événements et détection de collisions temporelles.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">🧩 C++ Moderne & POO</span>
+                <span class="glance-badge">⏱️ Détection collisions</span>
+                <span class="glance-badge">💾 Sérialisation STL</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & architecture ▾">
+                <span class="toggle-text">＋ Points clés & architecture ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Architecture modulaire POO avec séparation stricte modèle-vue-contrôleur.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Algorithme de détection et résolution de conflits temporels de rendez-vous.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Sérialisation de données et gestion rigoureuse de la mémoire.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">C++</span>
+                    <span class="tech-pill">STL</span>
+                    <span class="tech-pill">POO</span>
+                    <span class="tech-pill">Structures de données</span>
+                    <span class="tech-pill">Gestion mémoire</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Projet L2 Math-Info UHA</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="agenda">Détails</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: La Nuit de l'Info -->
+          <article class="project-card standard-project" data-category="code">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-code">🌙 Hackathon National</span>
+                <span class="meta-tag tag-date">2023 – 2025</span>
+                <span class="meta-tag tag-school">Compétition Nationale</span>
+              </div>
+              <h3 class="project-title">La Nuit de l’Informatique (3 éditions consécutives)</h3>
+              <p class="project-subtitle-text">
+                <em>Environ 16h de conception et développement web en équipe de la tombée de la nuit au petit matin.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Participation annuelle (L1, L2, L3) à la compétition nationale d'ingénierie logicielle réunissant des milliers d'étudiants de nuit.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">🌙 3 Éditions</span>
+                <span class="glance-badge">⏱️ ~16h non-stop</span>
+                <span class="glance-badge">👥 Travail agile Git</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & organisation ▾">
+                <span class="toggle-text">＋ Points clés & organisation ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                       <span class="kp-icon">✦</span>
+                      <span>Développement agile sous contrainte horaire serrée (environ 16h non-stop).</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Résolution de défis d'algorithmie, de sécurité et d'ergonomie utilisateur.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span>Coordination d'équipe, répartition des modules et intégration Git continue.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">HTML / CSS / JS</span>
+                    <span class="tech-pill">Git / GitHub</span>
+                    <span class="tech-pill">Développement Agile</span>
+                    <span class="tech-pill">Travail sous pression</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Équipe étudiante UHA</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="nuit-info">Détails</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Compétences (Bento Grid) -->
+    <section class="section skills-section" id="competences">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Boîte à Outils</span>
+        </div>
+        <h2 class="section-title">Compétences & <span class="highlight-pink">Savoir-Faire</span></h2>
+        <p class="section-subtitle">
+          Un ensemble de compétences techniques et analytiques structuré pour faire le pont entre la recherche en IA et le milieu hospitalier.
+        </p>
+
+        <!-- =============================================================
+             COLLAGE "À LA CARTE" (Inspiration 3 : Plateau Médical / Girl Dinner)
+             ============================================================= -->
+        <div class="collage-alacarte-wrapper" id="collage-alacarte">
+          <div class="collage-tablecloth">
+            
+            <!-- Editorial Header inspired by visual #3 -->
+            <div class="collage-header-editorial">
+              <div class="editorial-title-box">
+                <span class="editorial-kicker">✨ Inspiration Collage · Le Plateau « À la Carte »</span>
+                <h3 class="editorial-title">
+                  <span class="serif-italic">Mon Menu</span> <span class="bold-highlight">« Santé & IA »</span> <span class="serif-sub">à la carte 🍽️</span>
+                </h3>
+                <p class="editorial-subtitle">
+                  Une réinterprétation clinique et ludique du concept de collage : au lieu des logos de graphisme, retrouvez les ingrédients clés de mon cursus Master MIAS et Licence Math-Info. <em>Survolez ou cliquez sur chaque ingrédient de l'assiette pour afficher sa note de dégustation !</em>
+                </p>
+              </div>
+
+              <!-- Plate Category Filter Chips -->
+              <div class="plate-filters" id="plate-filters" role="group" aria-label="Filtrer les compétences du plateau">
+                <button class="plate-filter-btn active" data-category="all">🍽️ Tout le plateau</button>
+                <button class="plate-filter-btn" data-category="core">✨ Ingrédients Clés</button>
+                <button class="plate-filter-btn" data-category="sante">🏥 Clinique & Hôpital</button>
+                <button class="plate-filter-btn" data-category="tech">💻 Code & Modélisation</button>
+                <button class="plate-filter-btn" data-category="extra">🥐 French Touch</button>
+              </div>
+            </div>
+
+            <!-- Stage Container : Plate on Left, Tasting Note on Right -->
+            <div class="collage-interactive-stage">
+
+              <!-- 1. THE STYLIZED MEDICAL PLATE / TRAY -->
+              <div class="plate-scene-container" id="plate-scene">
+                
+                <div class="medical-dish-plate" id="medical-dish-plate" aria-label="Assiette stylisée avec les compétences en IA médicale de Naelle Phan">
+                  <div class="dish-outer-shadow"></div>
+                  <div class="dish-porcelain-rim"></div>
+                  <div class="dish-inner-surface">
+
+                    <!-- 1. UML / SysML -->
+                    <div class="dish-item item-uml" data-item="uml" data-category="tech core" tabindex="0" role="button" aria-label="Compétence UML et SysML : Modélisation des processus et parcours de soins">
+                      <div class="dish-sticker sticker-uml">
+                        <div class="sticker-badge-svg">
+                          <svg viewBox="0 0 72 72" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="60" height="60" rx="14" fill="#fdfbf7" stroke="#6e1820" stroke-width="2.5"/>
+                            <rect x="12" y="12" width="48" height="15" rx="4" fill="#f4eed6"/>
+                            <text x="36" y="23" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#440808" text-anchor="middle">«SysML Block»</text>
+                            <line x1="12" y1="27" x2="60" y2="27" stroke="#f8d3e2" stroke-width="1.5"/>
+                            <text x="16" y="37" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4a4050">+ parcoursSoins()</text>
+                            <text x="16" y="47" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4a4050">+ fluxSIH : Data</text>
+                            <line x1="12" y1="52" x2="60" y2="52" stroke="#f8d3e2" stroke-width="1.5"/>
+                            <text x="36" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#6e1820" text-anchor="middle">UML / SysML</text>
+                          </svg>
+                        </div>
+                        <span class="item-pin-tag">UML / SysML</span>
+                      </div>
+                    </div>
+
+                    <!-- 2. PYTHON -->
+                    <div class="dish-item item-python" data-item="python" data-category="tech core" tabindex="0" role="button" aria-label="Compétence Python : Machine Learning et scikit-learn">
+                      <div class="dish-sticker sticker-python">
+                        <div class="sticker-badge-svg">
+                          <svg viewBox="0 0 72 72" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="36" cy="36" r="31" fill="#ffffff" stroke="#dfd1b8" stroke-width="2"/>
+                            <!-- Upper snake (Rose/Pink) -->
+                            <path d="M35.6 14c-11.2 0-10.5 4.9-10.5 4.9l.01 5.1h10.7v1.5H20.7s-7.1.8-7.1 10.4 6.2 10.1 6.2 10.1h3.7v-5.2s-.2-6.2 6.1-6.2h10.5s5.9.1 5.9-5.8V19.8s.8-5.8-10.4-5.8zm-3 3.1c1 0 1.8.8 1.8 1.8s-.8 1.8-1.8 1.8-1.8-.8-1.8-1.8.8-1.8 1.8-1.8z" fill="#6e1820"/>
+                            <!-- Lower snake (Mint/Teal) -->
+                            <path d="M36.4 58c11.2 0 10.5-4.9 10.5-4.9l-.01-5.1H36.2v-1.5h15.1s7.1-.8 7.1-10.4-6.2-10.1-6.2-10.1h-3.7v5.2s.2 6.2-6.1 6.2H31.9s-5.9-.1-5.9 5.8v9.1s-.8 5.8 10.4 5.8zm3-3.1c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z" fill="#0d9488"/>
+                          </svg>
+                        </div>
+                        <span class="item-pin-tag">Python & ML</span>
+                      </div>
+                    </div>
+
+                    <!-- 3. ONTOLOGIES (OWL) -->
+                    <div class="dish-item item-owl" data-item="owl" data-category="sante core" tabindex="0" role="button" aria-label="Compétence Ontologies OWL : Sémantique médicale sous Protégé">
+                      <div class="dish-sticker sticker-owl">
+                        <div class="sticker-badge-svg">
+                          <svg viewBox="0 0 72 72" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="60" height="60" rx="14" fill="#faf5ff" stroke="#c084fc" stroke-width="2"/>
+                            <!-- Sémantique RDF Graphe -->
+                            <circle cx="23" cy="25" r="7" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+                            <text x="23" y="28" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" fill="#9333ea" text-anchor="middle">LKP</text>
+                            
+                            <circle cx="49" cy="22" r="7" fill="#f4eed6" stroke="#6e1820" stroke-width="2"/>
+                            <text x="49" y="25" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" fill="#6e1820" text-anchor="middle">SADM</text>
+
+                            <circle cx="36" cy="46" r="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+                            <text x="36" y="49" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" fill="#4f46e5" text-anchor="middle">OWL</text>
+
+                            <line x1="29" y1="24" x2="42" y2="23" stroke="#a855f7" stroke-width="1.8" stroke-dasharray="2 2"/>
+                            <line x1="26" y1="31" x2="33" y2="40" stroke="#a855f7" stroke-width="1.8"/>
+                            <line x1="46" y1="28" x2="39" y2="40" stroke="#6e1820" stroke-width="1.8"/>
+                            <text x="36" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#7e22ce" text-anchor="middle">Ontologies OWL</text>
+                          </svg>
+                        </div>
+                        <span class="item-pin-tag">OWL / SWRL</span>
+                      </div>
+                    </div>
+
+                    <!-- 4. STETHOSCOPE -->
+                    <div class="dish-item item-stethoscope" data-item="stethoscope" data-category="sante core" tabindex="0" role="button" aria-label="Compétence Stéthoscope & Immersion Hôpital : Compréhension du milieu soignant">
+                      <div class="dish-sticker sticker-stetho">
+                        <div class="sticker-badge-svg">
+                          <svg viewBox="0 0 88 88" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 18c0 14 10 24 20 24s20-10 20-24" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round"/>
+                            <circle cx="26" cy="16" r="3.5" fill="#6e1820"/>
+                            <circle cx="66" cy="16" r="3.5" fill="#6e1820"/>
+                            <path d="M46 42v10c0 10-8 16-16 16s-14-6-14-14 8-16 20-16h8c10 0 16 6 16 14v4" stroke="#6e1820" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="60" cy="56" r="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+                            <circle cx="60" cy="56" r="5" fill="#f4eed6" stroke="#6e1820" stroke-width="2"/>
+                          </svg>
+                        </div>
+                        <span class="item-pin-tag">Stéthoscope & SIH</span>
+                      </div>
+                    </div>
+
+                    <!-- 5. CERVEAU STYLISE (Neural Network AI) -->
+                    <div class="dish-item item-brain" data-item="brain" data-category="tech sante core" tabindex="0" role="button" aria-label="Compétence Cerveau Stylisé : Réseaux de neurones et Deep Learning">
+                      <div class="dish-sticker sticker-brain">
+                        <div class="sticker-badge-svg">
+                          <svg viewBox="0 0 80 80" width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="35" fill="#fff0f5" stroke="#dfd1b8" stroke-width="2"/>
+                            <path d="M40 19c-5-4-14-3-18 2-5 6-4 14-1 19-3 3-4 8-2 13 2 5 8 7 13 5 2 4 7 6 11 5" stroke="#6e1820" stroke-width="2.5" stroke-linecap="round" fill="rgba(255, 77, 141, 0.08)"/>
+                            <path d="M40 19c5-4 14-3 18 2 5 6 4 14 1 19 3 3 4 8 2 13-2 5-8 7-13 5-2 4-7 6-11 5" stroke="#6e1820" stroke-width="2.5" stroke-linecap="round" fill="rgba(255, 101, 159, 0.08)"/>
+                            <circle cx="28" cy="29" r="3" fill="#6e1820"/>
+                            <circle cx="52" cy="29" r="3" fill="#6e1820"/>
+                            <circle cx="32" cy="44" r="3" fill="#440808"/>
+                            <circle cx="48" cy="44" r="3" fill="#440808"/>
+                            <circle cx="40" cy="35" r="3.5" fill="#f43f5e"/>
+                            <line x1="28" y1="29" x2="40" y2="35" stroke="#c2906b" stroke-width="1.8"/>
+                            <line x1="52" y1="29" x2="40" y2="35" stroke="#c2906b" stroke-width="1.8"/>
+                            <line x1="32" y1="44" x2="40" y2="35" stroke="#c2906b" stroke-width="1.8"/>
+                            <line x1="48" y1="44" x2="40" y2="35" stroke="#c2906b" stroke-width="1.8"/>
+                            <text x="40" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#440808" text-anchor="middle">Cerveau IA</text>
+                          </svg>
+                        </div>
+                        <span class="item-pin-tag">Deep Learning</span>
+                      </div>
+                    </div>
+
+                    <!-- 6. FRENCH CROISSANT (Clin d'œil Girl Dinner / French Touch) -->
+                    <div class="dish-item item-croissant" data-item="croissant" data-category="extra" tabindex="0" role="button" aria-label="Ingrédient Croissant : French Touch et énergie pour le Master">
+                      <div class="dish-sticker sticker-croissant">
+                        <div class="emoji-sticker-icon">🥐</div>
+                        <span class="item-pin-tag">French Touch</span>
+                      </div>
+                    </div>
+
+                    <!-- 7. ICED COFFEE / LATTE (Clin d'œil Girl Dinner / Carburant) -->
+                    <div class="dish-item item-coffee" data-item="coffee" data-category="extra" tabindex="0" role="button" aria-label="Ingrédient Café Glacé : Carburant de recherche pour les longues sessions d'analyse">
+                      <div class="dish-sticker sticker-coffee">
+                        <div class="emoji-sticker-icon">☕</div>
+                        <span class="item-pin-tag">Carburant IA</span>
+                      </div>
+                    </div>
+
+                  </div> <!-- /dish-inner-surface -->
+                </div> <!-- /medical-dish-plate -->
+
+                <!-- FORK & NAPKIN BESIDE THE DISH (Inspiration Girl Dinner) -->
+                <div class="dish-cutlery" aria-hidden="true">
+                  <div class="cutlery-fork">🍴</div>
+                  <div class="cutlery-napkin"></div>
+                </div>
+
+                <!-- RESTAURANT RECEIPT / ADDITION TICKET -->
+                <div class="collage-receipt" id="collage-receipt" data-item="receipt" tabindex="0" role="button" aria-label="Addition du profil Naelle Phan" title="Cliquer pour afficher le détail de l'Addition">
+                  <div class="receipt-pin">📌</div>
+                  <div class="receipt-header">
+                    <span class="receipt-brand">✦ L'ADDITION DU RECRUTEUR ✦</span>
+                    <span class="receipt-sub">Master MIAS · Centrale Lille × ILIS</span>
+                  </div>
+                  <div class="receipt-items">
+                    <div class="r-row"><span>1x Rigueur Mathématique (L3)</span><strong>OFFERT</strong></div>
+                    <div class="r-row"><span>1x OntoPLC Pancréas (OWL)</span><strong>INCLUS</strong></div>
+                    <div class="r-row"><span>1x Modélisation UML & SysML</span><strong>ACQUIS</strong></div>
+                    <div class="r-row"><span>1x Machine Learning (Python)</span><strong>VALIDÉ</strong></div>
+                    <div class="r-row highlight-r-row"><span>1x Stage M1 5 mois (2027)</span><strong>DISPO !</strong></div>
+                  </div>
+                  <div class="receipt-total">
+                    <span>TOTAL :</span>
+                    <strong>100% PASSION & RIGUEUR</strong>
+                  </div>
+                  <div class="receipt-barcode">||| | ||||| || |||||| | ||||</div>
+                </div>
+
+              </div> <!-- /plate-scene-container -->
+
+              <!-- 2. TASTING NOTES DETAIL CARD (Dynamic on hover / click) -->
+              <div class="tasting-notes-panel" id="tasting-notes-panel" aria-live="polite">
+                <div class="panel-header-ribbon">
+                  <div class="ribbon-icon-wrap" id="tasting-icon-wrap">
+                    <span class="ribbon-icon" id="tasting-icon">🍽️</span>
+                  </div>
+                  <div class="ribbon-text">
+                    <span class="ribbon-kicker" id="tasting-category">Note de Dégustation</span>
+                    <h4 class="ribbon-title" id="tasting-title">Sélectionnez un ingrédient du plateau</h4>
+                  </div>
+                </div>
+
+                <div class="panel-body">
+                  <p class="tasting-description" id="tasting-desc">
+                    Survolez ou cliquez sur les éléments du plateau médical (<strong>UML/SysML</strong>, <strong>Python</strong>, <strong>Ontologies OWL</strong>, <strong>Stéthoscope</strong>, <strong>Cerveau IA</strong>, <strong>Croissant</strong>, <strong>Café</strong> ou <strong>L'Addition</strong>) pour savourer le détail de mes compétences appliquées à la santé !
+                  </p>
+
+                  <div class="tasting-meta-grid" id="tasting-meta">
+                    <div class="meta-cell">
+                      <span class="m-label">Outils & Méthodes :</span>
+                      <strong class="m-value" id="tasting-tools">Protégé, Weka, Python, C++, LaTeX</strong>
+                    </div>
+                    <div class="meta-cell">
+                      <span class="m-label">Projet Référent :</span>
+                      <strong class="m-value" id="tasting-project">Master MIAS & Recherche L3</strong>
+                    </div>
+                    <div class="meta-cell">
+                      <span class="m-label">Impact Clinique :</span>
+                      <strong class="m-value highlight-pink" id="tasting-impact">Aide au diagnostic médical & Explicabilité</strong>
+                    </div>
+                  </div>
+
+                  <div class="panel-actions">
+                    <a href="#projets" class="btn btn-primary-pink btn-sm" id="tasting-action-btn">
+                      <span id="tasting-action-label">Voir le projet associé</span>
+                      <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                    <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm">
+                      <span>Mon CV complet (PDF)</span>
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- /tasting-notes-panel -->
+
+            </div> <!-- /collage-interactive-stage -->
+
+          </div> <!-- /collage-tablecloth -->
+        </div> <!-- /collage-alacarte-wrapper -->
+
+        <!-- Separator Title for Bento Grid -->
+        <div class="bento-grid-intro">
+          <h3 class="bento-section-title"><span>📂</span> Boîte à Outils & Domaines d'Apprentissage</h3>
+          <p class="bento-section-sub">Consultez ci-dessous le détail de mes 6 domaines d'apprentissage, du machine learning au cadre juridique des données de santé.</p>
+        </div>
+        <div class="skills-bento-grid">
+
+          <!-- Competence 1: IA & Machine Learning -->
+          <div class="bento-card bento-pink">
+            <div class="bento-header">
+              <div class="bento-icon-box">🧠</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">IA & Machine Learning</h3>
+                <span class="bento-sub">Fouille de données & Modélisation</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">Random Forest</span>
+              <span class="bento-tag">Arbres J48 / C4.5</span>
+              <span class="bento-tag">Naive Bayes</span>
+              <span class="bento-tag">Auto-encodeurs</span>
+              <span class="bento-tag">Weka Explorer</span>
+              <span class="bento-tag">scikit-learn</span>
+              <span class="bento-tag">Validation croisée</span>
+              <span class="bento-tag">Courbes ROC / AUC</span>
+            </div>
+          </div>
+
+          <!-- Competence 2: IA Symbolique & Ontologies -->
+          <div class="bento-card bento-lavender">
+            <div class="bento-header">
+              <div class="bento-icon-box">🕸️</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">IA Symbolique & Connaissances</h3>
+                <span class="bento-sub">Graphes, Ontologies & Règles</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">Protégé 5.x</span>
+              <span class="bento-tag">Langage OWL</span>
+              <span class="bento-tag">Requêtes SPARQL</span>
+              <span class="bento-tag">Règles SWRL</span>
+              <span class="bento-tag">Graphes RDF</span>
+              <span class="bento-tag">SADM Hybrides</span>
+              <span class="bento-tag">Raisonneur Pellet</span>
+            </div>
+          </div>
+
+          <!-- Competence 3: Mathématiques Appliquées -->
+          <div class="bento-card bento-peach">
+            <div class="bento-header">
+              <div class="bento-icon-box">📐</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">Mathématiques Appliquées</h3>
+                <span class="bento-sub">Fondements théoriques (Licence UHA)</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">SVD Tronquée</span>
+              <span class="bento-tag">Théorème d'Eckart-Young</span>
+              <span class="bento-tag">Algèbre Spectrale</span>
+              <span class="bento-tag">Distributions de Schwartz</span>
+              <span class="bento-tag">Espaces de Sobolev</span>
+              <span class="bento-tag">Probabilités & Stats</span>
+              <span class="bento-tag">Optimisation numérique</span>
+            </div>
+          </div>
+
+          <!-- Competence 4: Santé, SIH & Réglementation -->
+          <div class="bento-card bento-mint">
+            <div class="bento-header">
+              <div class="bento-icon-box">🏥</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">Santé, SIH & Éthique</h3>
+                <span class="bento-sub">Environnement médical & cadre</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">Systèmes Hospitaliers (SIH)</span>
+              <span class="bento-tag">RGPD Données de Santé</span>
+            </div>
+          </div>
+
+          <!-- Competence 5: Programmation & Outils -->
+          <div class="bento-card bento-cream">
+            <div class="bento-header">
+              <div class="bento-icon-box">💻</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">Développement & Outils</h3>
+                <span class="bento-sub">Langages & Technologies</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">Python (pandas, NumPy)</span>
+              <span class="bento-tag">C++ Moderne (POO & STL)</span>
+              <span class="bento-tag">Modélisation UML / SysML</span>
+              <span class="bento-tag">Git & GitHub</span>
+              <span class="bento-tag">LaTeX</span>
+              <span class="bento-tag">MCD / MLD Relationnel</span>
+            </div>
+          </div>
+
+          <!-- Competence 6: Langues & Soft Skills -->
+          <div class="bento-card bento-rose">
+            <div class="bento-header">
+              <div class="bento-icon-box">💬</div>
+              <div class="bento-titles">
+                <h3 class="bento-title">Langues & Atouts</h3>
+                <span class="bento-sub">Communication & Terrain</span>
+              </div>
+            </div>
+            <div class="bento-tags-cloud">
+              <span class="bento-tag">Français (Maternelle)</span>
+              <span class="bento-tag">Anglais (B1 Technique)</span>
+              <span class="bento-tag">2+ ans en CDI</span>
+              <span class="bento-tag">Rigueur méthodologique</span>
+              <span class="bento-tag">Pédagogie & Écoute</span>
+              <span class="bento-tag">Permis B (Véhiculée)</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact & Téléchargement CV -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">Opportunités & Échanges</span>
+        </div>
+        <h2 class="section-title">Prenons <span class="highlight-pink">Contact</span></h2>
+        <p class="section-subtitle">
+          Vous recherchez une stagiaire ou une future collaboratrice rigoureuse, autonome et passionnée par l'IA en Santé dès mars 2027 ? Échangeons avec plaisir !
+        </p>
+
+        <div class="contact-layout">
+
+          <!-- Left Info Cards -->
+          <div class="contact-info-cards">
+            
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-details">
+                <span class="contact-label">Adresse Email</span>
+                <a href="mailto:naelle.phan@gmail.com" class="contact-value">naelle.phan@gmail.com</a>
+              </div>
+              <button class="btn btn-icon-copy copy-contact-btn" data-copy="naelle.phan@gmail.com" title="Copier l'adresse email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div class="contact-card-details">
+                <span class="contact-label">Téléphone</span>
+                <a href="tel:0638663256" class="contact-value">06 38 66 32 56</a>
+              </div>
+              <button class="btn btn-icon-copy copy-contact-btn" data-copy="0638663256" title="Copier le numéro de téléphone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">💼</div>
+              <div class="contact-card-details">
+                <span class="contact-label">Réseau Professionnel</span>
+                <a href="https://linkedin.com/in/naelle-phan" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/naelle-phan</a>
+              </div>
+              <a href="https://linkedin.com/in/naelle-phan" target="_blank" rel="noopener noreferrer" class="btn btn-icon-copy" title="Ouvrir le profil LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-details">
+                <span class="contact-label">Localisation & Mobilité</span>
+                <span class="contact-value-plain">Lauw (68290) & Lille (59) · Mobilité France entière</span>
+              </div>
+            </div>
+
+            <!-- CV Download Banner Card -->
+            <div class="cv-download-card">
+              <div class="cv-card-body">
+                <div class="cv-card-icon">📄</div>
+                <div>
+                  <h4 class="cv-card-title">Curriculum Vitae Complet</h4>
+                  <p class="cv-card-sub">Format PDF actualisé · Prêt à imprimer ou enregistrer</p>
+                </div>
+              </div>
+              <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-block">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Télécharger mon CV (PDF)</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Interactive Direct Message Form -->
+          <div class="contact-form-wrapper">
+            <div class="form-header">
+              <h3 class="form-title">Envoyez-moi un message direct</h3>
+              <p class="form-sub">Ce formulaire prépare instantanément votre message dans votre messagerie avec mes coordonnées directes.</p>
+            </div>
+
+            <form id="contact-form" class="direct-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name">Votre nom / Entreprise *</label>
+                  <input type="text" id="sender-name" name="name" placeholder="Ex: Dr. Martin / BioTech Health" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email">Votre adresse email *</label>
+                  <input type="email" id="sender-email" name="email" placeholder="nom@organisation.fr" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject-select">Objet de votre démarche *</label>
+                <select id="subject-select" name="subject" required>
+                  <option value="Proposition de Stage M1 (5 mois - mars 2027)">Proposition de Stage M1 (5 mois - dès mars 2027)</option>
+                  <option value="Opportunité d'Alternance en IA / Data Santé">Opportunité d'Alternance en IA / Data Santé</option>
+                  <option value="Échange sur vos travaux de recherche">Échange sur vos travaux de recherche (SADM / SVD)</option>
+                  <option value="Autre demande professionnelle">Autre demande professionnelle</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Votre message *</label>
+                <textarea id="sender-message" name="message" rows="5" placeholder="Bonjour Naelle, votre profil à l'intersection des Mathématiques et de l'IA en Santé nous intéresse particulièrement pour..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary-pink btn-lg btn-block">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Envoyer le message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Naelle Phan</span>
+        <span class="footer-role">Master MIAS · Centrale Lille & ILIS Univ. Lille</span>
+        <span class="footer-copy">© 2026 Naelle Phan — Tous droits réservés. Portfolio conçu avec passion et minimalisme.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Haut de page ↑</a>
+        <a href="#formations">Formations</a>
+        <a href="#projets">Projets</a>
+        <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (Pop-in interactive) -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close-btn" aria-label="Fermer la boîte de dialogue">✕</button>
+        <div class="modal-body" id="modal-body-content">
+          <!-- Dynamically populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js?v=2.6"></script>
+</body>
+</html>
