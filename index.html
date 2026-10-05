@@ -154,6 +154,7 @@
                 <button class="search-chip-pill" data-query="maths">📐 Maths & Algorithmes</button>
                 <button class="search-chip-pill" data-query="stage">🎯 Stage M1 & Alternance M2</button>
                 <button class="search-chip-pill" data-query="pancreas">🔬 Pancréas (28p)</button>
+                <button class="search-chip-pill" data-query="thyroide">🦋 Thyroïde (41p)</button>
                 <button class="search-chip-pill" data-query="atouts">⚡ 3 Atouts clés</button>
                 <button class="search-chip-pill" data-query="mobilite">📍 Mobilité & Permis</button>
               </div>
@@ -853,28 +854,28 @@
 
         <!-- Project Filter Buttons -->
         <div class="project-filter-bar">
-          <button class="filter-btn active" data-filter="all">Tous les projets (5)</button>
-          <button class="filter-btn" data-filter="sante">IA & Santé (1)</button>
+          <button class="filter-btn active" data-filter="all">Tous les projets (6)</button>
+          <button class="filter-btn" data-filter="sante">IA & Santé (2)</button>
           <button class="filter-btn" data-filter="maths">Mathématiques & SVD (2)</button>
           <button class="filter-btn" data-filter="code">Développement & Hackathon (2)</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
 
-          <!-- PROJECT 1: FEATURED STAR PROJECT - Cancer du pancréas -->
+          <!-- PROJECT 1: FEATURED STAR PROJECT - Pathologies Thyroïdiennes -->
           <article class="project-card featured-project" data-category="sante">
-            <div class="featured-ribbon">⭐ Projet Phare Master MIAS</div>
+            <div class="featured-ribbon">⭐ Projet Phare Master MIAS · IA & Endocrinologie</div>
             <div class="project-card-layout">
               <div class="project-visual-col">
                 <div class="project-img-frame">
-                  <img src="bordeaux-macos-folder.png" alt="Dossier macOS bordeaux de recherche IA & Santé" class="folder-cover-img">
+                  <img src="bordeaux-macos-folder.png" alt="Dossier de recherche SADM Pathologies Thyroïdiennes" class="folder-cover-img">
                   <div class="project-badge-overlay">
-                    <span class="badge-tag">Rapport 28 pages · PDF</span>
+                    <span class="badge-tag">Rapport 41 pages · PDF</span>
                   </div>
                 </div>
                 <div class="authorship-box">
                   <span class="authors-label">Auteurs :</span>
-                  <span class="authors-names">Naelle Phan & Alexis Robin</span>
+                  <span class="authors-names">Peguy B., De Souza M., Phan N., Robin A.</span>
                   <span class="advisor-label">Sous la direction du :</span>
                   <span class="advisor-name">Pr. Slim Hammadi (Centrale Lille)</span>
                 </div>
@@ -882,27 +883,28 @@
 
               <div class="project-info-col">
                 <div class="project-meta-top">
-                  <span class="meta-tag tag-sante">🏥 IA Médicale & SADM</span>
+                  <span class="meta-tag tag-sante">🏥 IA Médicale & SADM Hybride</span>
                   <span class="meta-tag tag-date">Septembre 2026</span>
-                  <span class="meta-tag tag-school">Centrale Lille & Univ. Lille ILIS</span>
+                  <span class="meta-tag tag-school">Centrale Lille & Univ. Lille (UFR3S)</span>
                 </div>
 
                 <h3 class="project-title">
-                  Système d’Aide à la Décision Médicale pour les Lésions Kystiques du Pancréas
+                  Système d’Aide à la Décision Médicale pour les Pathologies Thyroïdiennes
                 </h3>
                 <p class="project-subtitle-text">
-                  <em>De la modélisation ontologique symbolique sous Protégé (OWL, SPARQL, SWRL) à la fouille de données sous-symbolique sous Weka.</em>
+                  <em>De l’analyse exploratoire des données à l’hybridation d’une ontologie sous Protégé (OWL, SPARQL, SWRL) et d’arbres de décision sous Weka.</em>
                 </p>
 
                 <p class="project-desc">
-                  Conception d'un SADM hybride combinant ontologies OWL (Protégé) et fouille de données (Weka) pour assister l'orientation thérapeutique des lésions kystiques du pancréas.
+                  Conception d’un SADM hybride robuste conciliant l'analyse statistique exploratoire (χ², Pearson), l'apprentissage supervisé sous Weka (arbre J48 à 99,58 % d'exactitude sur 3 772 patients UCI) et le raisonnement déductif d'une ontologie OWL 2 sous Protégé pour sécuriser le diagnostic et la posologie gériatrique selon l’EU AI Act.
                 </p>
 
                 <!-- Quick Glance Badges -->
                 <div class="card-glance-badges">
-                  <span class="glance-badge">📑 Rapport 28p (PDF)</span>
-                  <span class="glance-badge">🔬 10 cas cliniques réels</span>
-                  <span class="glance-badge">⚖️ Protégé + Weka</span>
+                  <span class="glance-badge">📑 Rapport 41p (PDF)</span>
+                  <span class="glance-badge">🔬 3 772 patients (UCI)</span>
+                  <span class="glance-badge">🌲 J48 (99,58 %) + OntoThyroid</span>
+                  <span class="glance-badge">⚖️ Explicabilité & EU AI Act</span>
                 </div>
 
                 <!-- Collapsible Drawer Toggle -->
@@ -915,41 +917,116 @@
                   <div class="drawer-inner-content">
                     <div class="project-highlights-grid">
                       <div class="hl-item">
-                        <strong>IA Symbolique (Protégé) :</strong> Création de l'ontologie clinique <code>OntoPLC</code>, formalisation de 10 cas patients types, requêtes sémantiques SPARQL et règles de déduction diagnostique et chirurgicale en SWRL.
-                       </div>
+                        <strong>Analyse Exploratoire & Biomarqueurs :</strong> Assainissement de la cohorte UCI (3 772 patients), démonstration mathématique de dépendance par test du χ² (p = 1,31×10⁻⁶), étude de colinéarité de Pearson (r = +0,793 entre TT4 et FTI) et analyse du déséquilibre de classes.
+                      </div>
                       <div class="hl-item">
-                        <strong>IA Sous-Symbolique (Weka) :</strong> Benchmark comparatif de classifieurs supervisés (J48, Random Forest, Naive Bayes, LMT), validation croisée k-fold, mise en évidence du surapprentissage et analyse fine des courbes ROC / AUC.
+                        <strong>IA Symbolique (Protégé & Pellet) :</strong> Ontologie formelle <code>OntoThyroid</code> (30 classes, 16 règles SWRL), raisonneur Pellet sous Owlready2, requêtes sémantiques SPARQL, politique d'abstention prudente et sécurisation de la prescription chez le sujet âgé.
+                      </div>
+                      <div class="hl-item">
+                        <strong>IA Sous-Symbolique (Fouille Weka) :</strong> Benchmark comparatif (J48, LMT, RandomTree, Naive Bayes), validation croisée 10 plis, extraction des seuils pivots (TSH ≤ 6,0 et FTI ≤ 64,0) et analyse fine des courbes ROC sous KnowledgeFlow.
                       </div>
                     </div>
 
                     <div class="project-tech-pills">
-                      <span class="tech-pill">Protégé</span>
-                      <span class="tech-pill">OWL</span>
-                      <span class="tech-pill">SPARQL</span>
+                      <span class="tech-pill">Protégé 5.6</span>
+                      <span class="tech-pill">OWL 2</span>
                       <span class="tech-pill">SWRL</span>
+                      <span class="tech-pill">Pellet Reasoner</span>
+                      <span class="tech-pill">SPARQL</span>
                       <span class="tech-pill">Weka Explorer</span>
-                      <span class="tech-pill">Random Forest</span>
-                      <span class="tech-pill">Naive Bayes</span>
-                      <span class="tech-pill">J48</span>
-                      <span class="tech-pill">Courbes ROC / AUC</span>
+                      <span class="tech-pill">Arbre J48 (99,58 %)</span>
+                      <span class="tech-pill">Test du χ²</span>
+                      <span class="tech-pill">Matrice de Pearson</span>
+                      <span class="tech-pill">KnowledgeFlow (ROC)</span>
+                      <span class="tech-pill">EU AI Act</span>
                     </div>
                   </div>
                 </div>
+
                 <div class="project-actions">
-                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="pancreas">
+                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="thyroide">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                     <span>Consulter la synthèse détaillée</span>
                   </button>
-                  <a href="Cancer_du_pancreas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le rapport complet au format PDF">
+                  <a href="Pathologies_Thyroidiennes.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le rapport complet au format PDF">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                    <span>Lire le rapport (PDF)</span>
+                    <span>Lire le rapport (PDF - 41p)</span>
                   </a>
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- PROJECT 2: SVD & Auto-encodeurs Linéaires -->
+          <!-- PROJECT 2: Lésions Kystiques du Pancréas -->
+          <article class="project-card standard-project" data-category="sante">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-sante">🏥 IA Médicale & SADM</span>
+                <span class="meta-tag tag-date">Septembre 2026 · M1 MIAS</span>
+                <span class="meta-tag tag-school">Centrale Lille & Univ. Lille ILIS</span>
+              </div>
+              <h3 class="project-title">Système d’Aide à la Décision Médicale pour les Lésions Kystiques du Pancréas</h3>
+              <p class="project-subtitle-text">
+                <em>De la modélisation ontologique symbolique sous Protégé (OWL, SPARQL, SWRL) à la fouille de données sous-symbolique sous Weka.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Conception d'un SADM hybride combinant ontologies OWL (Protégé) et fouille de données (Weka) pour assister l'orientation thérapeutique des lésions kystiques du pancréas.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">📑 Rapport 28p (PDF)</span>
+                <span class="glance-badge">🔬 10 cas cliniques</span>
+                <span class="glance-badge">⚖️ Protégé + Weka</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & démarche ▾">
+                <span class="toggle-text">＋ Points clés & démarche ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span><strong>IA Symbolique (Protégé) :</strong> Création de l'ontologie <code>OntoPLC</code>, formalisation de 10 cas patients, requêtes SPARQL et règles SWRL d'orientation chirurgicale.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span><strong>IA Sous-Symbolique (Weka) :</strong> Benchmark comparatif (J48, Random Forest, Naive Bayes), validation croisée 10-fold et analyse fine des courbes ROC / AUC.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">Protégé</span>
+                    <span class="tech-pill">OWL</span>
+                    <span class="tech-pill">SPARQL</span>
+                    <span class="tech-pill">SWRL</span>
+                    <span class="tech-pill">Weka Explorer</span>
+                    <span class="tech-pill">Random Forest</span>
+                    <span class="tech-pill">J48</span>
+                    <span class="tech-pill">Courbes ROC / AUC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Phan N. & Robin A. (Dir. Pr. S. Hammadi)</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="pancreas">Détails</button>
+                <a href="Cancer_du_pancreas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm">
+                  <span>Rapport (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: SVD & Auto-encodeurs Linéaires -->
           <article class="project-card standard-project" data-category="maths">
             <div class="project-card-header">
               <div class="project-meta-top">
@@ -1020,7 +1097,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 3: Théorie des Distributions -->
+          <!-- PROJECT 4: Théorie des Distributions -->
           <article class="project-card standard-project" data-category="maths">
             <div class="project-card-header">
               <div class="project-meta-top">
