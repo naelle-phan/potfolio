@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // =========================================================================
-  // 2. Project Database for Interactive Modal (5 Real Projects)
+  // 2. Project Database for Interactive Modal (6 Real Projects)
   // =========================================================================
   const projectDatabase = {
     pancreas: {
@@ -26,6 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
         "Évaluation rigoureuse : Validation croisée 10-fold, étude comparative des courbes ROC et aires sous la courbe (AUC), et démonstration formelle des risques de surapprentissage (overfitting) sur des jeux de données médicaux de petite taille."
       ],
       results: "Démonstration de la supériorité d'une architecture hybride : l'IA symbolique garantit une explicabilité médicale totale et le respect absolu des recommandations cliniques internationales, tandis que l'IA sous-symbolique apporte une flexibilité prédictive sur les profils atypiques."
+    },
+
+    thyroide: {
+      category: '🏥 IA Médicale & SADM Hybride',
+      date: 'Septembre 2026 · Master 1 MIAS',
+      school: 'Centrale Lille & Université de Lille (UFR3S)',
+      title: "Système d’Aide à la Décision Médicale pour les Pathologies Thyroïdiennes",
+      subtitle: "De l’analyse exploratoire des données à l’hybridation d’une ontologie sous Protégé (OWL, SPARQL, SWRL) et d’arbres de décision sous Weka",
+      authors: "Peguy Baptiste, De Souza Maryla, Phan Naelle, Robin Alexis (sous la direction du Pr. Slim Hammadi, Centrale Lille)",
+      pdfLink: "Pathologies_Thyroidiennes.pdf",
+      pdfLabel: "Ouvrir le rapport complet (41 pages - PDF)",
+      context: "En endocrinologie, le diagnostic des affections thyroïdiennes (nodules et dysthyroïdies) repose sur des bilans biologiques multidimensionnels aux signaux parfois trompeurs et soumis à un déséquilibre extrême des classes (92,3 % de patients euthyroïdiens). L'enjeu est de concilier la puissance diagnostique de l'apprentissage statistique supervisé avec la traçabilité explicable et la sécurité clinique imposées par l'EU AI Act.",
+      architecture: [
+        "Cohorte clinique & Analyse Exploratoire : Assainissement rigoureux de 9 172 dossiers bruts de l'archive UCI pour isoler une cohorte homogène de 3 772 patients (élimination des biais de grossesse, chirurgie et traitements hormonaux substitutifs). Démonstration formelle de dépendance par le test d'indépendance du χ² (χ²obs = 30,11 ≫ 16,27, p = 1,31×10⁻⁶) et analyse de colinéarité de Pearson (r = +0,793 entre TT4 et FTI).",
+        "IA Symbolique (OntoThyroid sous Protégé) : Modélisation d'une ontologie formelle OWL 2 (30 classes, 16 propriétés, 16 règles SWRL, 17 individus de référence) instanciée et raisonnée avec Pellet sous Owlready2. Définition de règles déductives expertes pour la qualification biologique et requêtes sémantiques SPARQL.",
+        "IA Sous-Symbolique (Fouille Weka) : Benchmark complet sous validation croisée 10 plis (J48, LMT, RandomTree, Random Forest, Naive Bayes). L'arbre J48 élagué atteint 99,58 % d'exactitude (Kappa = 0,9707) avec extraction empirique des seuils décisionnels pivots (TSH ≤ 6,0 mUI/L et FTI ≤ 64,0). Évaluation comparative des courbes ROC sous KnowledgeFlow démontrant l'effondrement de Naive Bayes face à la colinéarité.",
+        "SADM Hybride & Sécurisation Clinique : Articulation synergique des deux approches : validation empirique des seuils par J48, complétée par la supervision sémantique de l'ontologie qui assure le contrôle formel d'éligibilité, la politique d'abstention prudente (zone limite 6 < TSH ≤ 10) et l'encadrement posologique gériatrique prudent (palier initial à 12,5 µg/j)."
+      ],
+      results: "Conception et validation expérimentale d'une architecture hybride de SADM réconciliant haute performance prédictive (99,58 % sous Weka) et explicabilité clinique totale par ontologie déductive, en conformité avec les exigences de l'EU AI Act."
     },
 
     svd: {
@@ -109,6 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 3. Minimalist Recruiter Search Bar Widget (Inspired by videoframe_3595.png)
   // =========================================================================
+  // Configuration de l'Assistant IA Réel (Cloudflare Worker + Groq Llama 3.3)
+  // Remplacez par votre URL Cloudflare Worker déployée (ex: "https://votre-worker.workers.dev")
+  // Si laissé vide "", l'assistant utilise automatiquement le moteur sémantique local de secours.
+  const AI_WORKER_URL = "https://portfolio-ai.naelle-phan.workers.dev";
+  let currentAiAbortController = null;
   const searchInput = document.getElementById('recruiter-search-input');
   const searchClearBtn = document.getElementById('search-clear-btn');
   const searchChips = document.querySelectorAll('.search-chip-pill');
@@ -135,6 +159,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: "📂 Voir la fiche projet détaillée", url: "#projets", target: "_self" }
       ],
       keywords: ["pancreas", "pancréas", "cancer", "kyste", "kystes", "lkp", "ontoplc", "rapport", "memoire", "mémoire", "28 pages", "weka", "random forest", "sparql", "swrl", "arbre de decision", "roc", "auc"]
+    },
+    thyroide: {
+      title: "Mémoire Recherche : SADM Hybride Thyroïde (41p)",
+      text: "Projet majeur de Master 1 MIAS encadré par le Pr. Slim Hammadi (Centrale Lille) : conception d'un SADM hybride combinant la fouille de données sous Weka (arbre de décision J48 atteignant 99,58 % d'exactitude sur 3 772 patients de l'UCI) et une ontologie formelle sous Protégé (OntoThyroid, 16 règles SWRL, raisonneur Pellet, SPARQL) garantissant l'explicabilité et la sécurisation gériatrique conforme à l'EU AI Act.",
+      actions: [
+        { label: "🔬 Lire le rapport complet 41p (PDF)", url: "Pathologies_Thyroidiennes.pdf", target: "_blank" },
+        { label: "📂 Voir la fiche projet détaillée", url: "#projets", target: "_self" }
+      ],
+      keywords: ["thyroide", "thyroïde", "tsh", "hypothyroidie", "hypothyroïdie", "weka", "j48", "ontothyroid", "ontologie", "sparql", "swrl", "pellet", "hammadi", "41 pages", "sadm", "hybride", "endocrinologie", "nodule", "nodules", "chi2", "khi2", "pearson"]
     },
     maths: {
       title: "Niveau Mathématiques & Algèbre Spectrale",
@@ -203,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Tutorat Bénévole & Pédagogie",
       text: "J'ai assuré pendant 3 années consécutives du tutorat bénévole en mathématiques. Cette expérience m'a appris la pédagogie, la capacité à écouter et à reformuler des concepts abstraits, qualités clés pour collaborer avec des médecins et soignants sur le terrain.",
       actions: [
-        { label: "✨ Voir mes engagements", url: "#about", target: "_self" },
+        { label: "💼 Découvrir mon parcours", url: "#experiences", target: "_self" },
         { label: "✉️ Me contacter", url: "#contact", target: "_self" }
       ],
       keywords: ["tutorat", "pedagogie", "pédagogie", "benevolat", "bénévolat", "enseignement", "vulgarisation", "ecoute", "écoute", "coaching", "sport", "association"]
@@ -334,6 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup suggestion chip clicks
   searchChips.forEach(chip => {
     chip.addEventListener('click', () => {
+      if (currentAiAbortController) currentAiAbortController.abort();
       const qKey = chip.getAttribute('data-query');
       displaySearchAnswer(qKey);
       if (searchInput) {
@@ -343,9 +377,98 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function displayRealAIAnswer(question, replyText) {
+    if (!answerCard) return;
+    searchChips.forEach(chip => chip.classList.remove('active'));
+    answerCard.classList.remove('updating');
+
+    if (matchedTitle) matchedTitle.textContent = `Réponse IA · « ${question} »`;
+    if (answerText) answerText.textContent = replyText;
+    if (answerActions) {
+      answerActions.innerHTML = `
+        <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-sm">
+          <span>📄 Télécharger mon CV (PDF)</span>
+        </a>
+        <a href="#contact" class="btn btn-soft-pink btn-sm">
+          <span>✉️ Contacter Naelle</span>
+        </a>
+      `;
+    }
+  }
+
+  async function askRealAI(question) {
+    if (!AI_WORKER_URL) return false;
+
+    if (currentAiAbortController) {
+      currentAiAbortController.abort();
+    }
+    currentAiAbortController = new AbortController();
+
+    if (matchedTitle) matchedTitle.textContent = `Génération IA en cours...`;
+    if (answerText) answerText.textContent = `Consultation du profil de Naelle pour répondre à : « ${question} »...`;
+    if (answerActions) answerActions.innerHTML = '';
+    answerCard.classList.add('updating');
+
+    try {
+      const res = await fetch(AI_WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: question }),
+        signal: currentAiAbortController.signal,
+      });
+
+      if (!res.ok) throw new Error(`Réponse Worker: ${res.status}`);
+      const data = await res.json();
+      if (data && data.reply) {
+        displayRealAIAnswer(question, data.reply);
+        return true;
+      }
+      throw new Error('Réponse invalide du Worker');
+    } catch (err) {
+      if (err.name === 'AbortError') return true;
+      console.warn('Bascule vers le moteur local (Cloudflare Worker indisponible) :', err);
+      answerCard.classList.remove('updating');
+      return false;
+    }
+  }
+
   // Real-time Semantic Search & NLP matching on input
   if (searchInput) {
     let searchDebounce = null;
+
+    const executeSearch = async (val) => {
+      if (!val) {
+        displaySearchAnswer('hopital');
+        return;
+      }
+
+      // 1. Tenter l'appel au LLM réel si le Worker est configuré
+      if (AI_WORKER_URL && val.length >= 4) {
+        const success = await askRealAI(val);
+        if (success) return;
+      }
+
+      // 2. Moteur sémantique local de secours
+      const matchedTopic = semanticMatchTopic(val);
+      if (matchedTopic) {
+        displaySearchAnswer(matchedTopic, `« ${val} » → ${searchFAQDatabase[matchedTopic].title}`);
+      } else {
+        if (answerCard) {
+          answerCard.classList.add('updating');
+          setTimeout(() => {
+            if (matchedTitle) matchedTitle.textContent = `Résultat pour « ${val} »`;
+            if (answerText) answerText.textContent = "Je n'ai pas trouvé de correspondance exacte, mais je peux vous renseigner en détail sur le stage M1 de Naelle (mars 2027), son Master MIAS (Centrale Lille × ILIS), son projet sur le cancer du pancréas ou ses compétences en code et maths !";
+            if (answerActions) {
+              answerActions.innerHTML = `
+                <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-sm"><span>📄 Télécharger le CV (PDF)</span></a>
+                <a href="#contact" class="btn btn-soft-pink btn-sm"><span>✉️ Poser la question à Naelle</span></a>
+              `;
+            }
+            answerCard.classList.remove('updating');
+          }, 100);
+        }
+      }
+    };
 
     searchInput.addEventListener('input', () => {
       const val = searchInput.value.trim();
@@ -359,36 +482,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
       clearTimeout(searchDebounce);
       if (!val) {
+        if (currentAiAbortController) currentAiAbortController.abort();
         displaySearchAnswer('hopital');
         return;
       }
 
       searchDebounce = setTimeout(() => {
-        const matchedTopic = semanticMatchTopic(val);
-        if (matchedTopic) {
-          displaySearchAnswer(matchedTopic, `« ${val} » → ${searchFAQDatabase[matchedTopic].title}`);
-        } else {
-          // Intelligent fallback
-          if (answerCard) {
-            answerCard.classList.add('updating');
-            setTimeout(() => {
-              if (matchedTitle) matchedTitle.textContent = `Résultat pour « ${val} »`;
-              if (answerText) answerText.textContent = "Je n'ai pas trouvé de correspondance exacte, mais je peux vous renseigner en détail sur le stage M1 de Naelle (mars 2027), son Master MIAS (Centrale Lille × ILIS), son projet sur le cancer du pancréas ou ses compétences en code et maths !";
-              if (answerActions) {
-                answerActions.innerHTML = `
-                  <a href="CV_Naelle_Phan.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-sm"><span>📄 Télécharger le CV (PDF)</span></a>
-                  <a href="#contact" class="btn btn-soft-pink btn-sm"><span>✉️ Poser la question à Naelle</span></a>
-                `;
-              }
-              answerCard.classList.remove('updating');
-            }, 100);
-          }
-        }
-      }, 150);
+        executeSearch(val);
+      }, AI_WORKER_URL ? 400 : 150);
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        clearTimeout(searchDebounce);
+        executeSearch(searchInput.value.trim());
+      }
     });
 
     if (searchClearBtn) {
       searchClearBtn.addEventListener('click', () => {
+        if (currentAiAbortController) currentAiAbortController.abort();
         searchInput.value = '';
         searchClearBtn.classList.remove('visible');
         displaySearchAnswer('hopital');
