@@ -152,6 +152,7 @@
                 <button class="search-chip-pill active" data-query="hopital">🏥 Hôpital & SIH</button>
                 <button class="search-chip-pill" data-query="maths">📐 Maths & Algorithmes</button>
                 <button class="search-chip-pill" data-query="stage">🎯 Stage M1 & Alternance M2</button>
+                <button class="search-chip-pill" data-query="barcelone">📊 Data Science (M0-M10)</button>
                 <button class="search-chip-pill" data-query="pancreas">🔬 Pancréas (28p)</button>
                 <button class="search-chip-pill" data-query="thyroide">🦋 Thyroïde (41p)</button>
                 <button class="search-chip-pill" data-query="atouts">⚡ 3 Atouts clés</button>
@@ -787,67 +788,68 @@
         </div>
         <h2 class="section-title">Projets de <span class="highlight-pink">Recherche</span> & Rapports Scientifiques</h2>
         <p class="section-subtitle">
-          Découvrez mes travaux académiques approfondis en IA médicale, décomposition spectrale et mathématiques pures. Tous les mémoires sont disponibles en lecture et téléchargement PDF.
+          Découvrez mes travaux académiques approfondis en IA médicale, data science & machine learning, décomposition spectrale et mathématiques pures. Tous les mémoires et cahiers d'analyse sont disponibles en lecture et téléchargement.
         </p>
 
         <!-- Project Filter Buttons -->
         <div class="project-filter-bar">
-          <button class="filter-btn active" data-filter="all">Tous les projets (6)</button>
+          <button class="filter-btn active" data-filter="all">Tous les projets (7)</button>
           <button class="filter-btn" data-filter="sante">IA & Santé (2)</button>
+          <button class="filter-btn" data-filter="data">Data Science & ML (1)</button>
           <button class="filter-btn" data-filter="maths">Mathématiques & SVD (2)</button>
           <button class="filter-btn" data-filter="code">Développement & Hackathon (2)</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
 
-          <!-- PROJECT 1: FEATURED STAR PROJECT - Pathologies Thyroïdiennes -->
-          <article class="project-card featured-project" data-category="sante">
-            <div class="featured-ribbon">⭐ Projet Phare Master MIAS · IA & Endocrinologie</div>
+          <!-- PROJECT 1: FEATURED STAR PROJECT - Data Science & Machine Learning (Barcelone) -->
+          <article class="project-card featured-project" data-category="data">
+            <div class="featured-ribbon">⭐ Projet Phare Master MIAS · Data Science & Machine Learning</div>
             <div class="project-card-layout">
               <div class="project-visual-col">
                 <div class="project-img-frame">
-                  <img src="bordeaux-macos-folder.png" alt="Dossier de recherche SADM Pathologies Thyroïdiennes" class="folder-cover-img">
+                  <img src="bordeaux-macos-folder.png" alt="Cahier d'analyse Data Science Barcelone" class="folder-cover-img">
                   <div class="project-badge-overlay">
-                    <span class="badge-tag">Rapport 41 pages · PDF</span>
+                    <span class="badge-tag">Cahier 53 pages · PDF</span>
                   </div>
                 </div>
                 <div class="authorship-box">
-                  <span class="authors-label">Auteurs :</span>
-                  <span class="authors-names">Peguy B., De Souza M., Phan N., Robin A.</span>
-                  <span class="advisor-label">Sous la direction du :</span>
-                  <span class="advisor-name">Pr. Slim Hammadi (Centrale Lille)</span>
+                  <span class="authors-label">Auteure :</span>
+                  <span class="authors-names">Phan Naelle</span>
+                  <span class="advisor-label">Formation :</span>
+                  <span class="advisor-name">Master 1 MIAS (Centrale Lille / ILIS)</span>
                 </div>
               </div>
 
               <div class="project-info-col">
                 <div class="project-meta-top">
-                  <span class="meta-tag tag-sante">🏥 IA Médicale & SADM Hybride</span>
-                  <span class="meta-tag tag-date">Septembre 2026</span>
-                  <span class="meta-tag tag-school">Centrale Lille & Univ. Lille (UFR3S)</span>
+                  <span class="meta-tag tag-data">📊 Data Science & Machine Learning</span>
+                  <span class="meta-tag tag-date">Automne 2026</span>
+                  <span class="meta-tag tag-school">Centrale Lille & Univ. Lille ILIS</span>
                 </div>
 
                 <h3 class="project-title">
-                  Système d’Aide à la Décision Médicale pour les Pathologies Thyroïdiennes
+                  Tarification & Régulation du Marché Locatif de Barcelone
                 </h3>
                 <p class="project-subtitle-text">
-                  <em>De l’analyse exploratoire des données à l’hybridation d’une ontologie sous Protégé (OWL, SPARQL, SWRL) et d’arbres de décision sous Weka.</em>
+                  <em>Étude longitudinale complète (Jalons M0 à M10) sous Inside Airbnb : de l'ingénierie de pipelines scikit-learn au deep learning PyTorch et fusion multimodale.</em>
                 </p>
 
                 <p class="project-desc">
-                  Conception d’un SADM hybride robuste conciliant l'analyse statistique exploratoire (χ², Pearson), l'apprentissage supervisé sous Weka (arbre J48 à 99,58 % d'exactitude sur 3 772 patients UCI) et le raisonnement déductif d'une ontologie OWL 2 sous Protégé pour sécuriser le diagnostic et la posologie gériatrique selon l’EU AI Act.
+                  Cahier d'analyse prédictive et prescriptive sur 15 293 annonces Inside Airbnb : discipline Split-First absolue (zéro data leakage), pipelines scikit-learn étanches (<code>ColumnTransformer</code>), benchmark de régression et classification, optimisation du seuil sous contrainte de matrice de coût et réseaux de neurones MLP PyTorch.
                 </p>
 
                 <!-- Quick Glance Badges -->
                 <div class="card-glance-badges">
-                  <span class="glance-badge">📑 Rapport 41p (PDF)</span>
-                  <span class="glance-badge">🔬 3 772 patients (UCI)</span>
-                  <span class="glance-badge">🌲 J48 (99,58 %) + OntoThyroid</span>
-                  <span class="glance-badge">⚖️ Explicabilité & EU AI Act</span>
+                  <span class="glance-badge">📓 Cahier M0 à M10 (53p)</span>
+                  <span class="glance-badge">🛡️ Zéro Data Leakage</span>
+                  <span class="glance-badge">⚡ scikit-learn + PyTorch</span>
+                  <span class="glance-badge">📈 Matrice de coût & GroupKFold</span>
                 </div>
 
                 <!-- Collapsible Drawer Toggle -->
-                <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Démarche scientifique & méthodologie ▾">
-                  <span class="toggle-text">＋ Démarche scientifique & méthodologie ▾</span>
+                <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Démarche scientifique & jalons M0-M10 ▾">
+                  <span class="toggle-text">＋ Démarche scientifique & jalons M0-M10 ▾</span>
                   <span class="toggle-arrow">▾</span>
                 </button>
 
@@ -855,47 +857,127 @@
                   <div class="drawer-inner-content">
                     <div class="project-highlights-grid">
                       <div class="hl-item">
-                        <strong>Analyse Exploratoire & Biomarqueurs :</strong> Assainissement de la cohorte UCI (3 772 patients), démonstration mathématique de dépendance par test du χ² (p = 1,31×10⁻⁶), étude de colinéarité de Pearson (r = +0,793 entre TT4 et FTI) et analyse du déséquilibre de classes.
+                        <strong>Génie Logiciel & Pipelines (M0–M3) :</strong> Discipline <em>Split-First</em> absolue avec scellement du jeu de test (Sealed Test Set), pipelines <code>ColumnTransformer</code> sans fuite, encodage haute cardinalité (69 quartiers) et journal de décisions formel (*Decision Log*).
                       </div>
                       <div class="hl-item">
-                        <strong>IA Symbolique (Protégé & Pellet) :</strong> Ontologie formelle <code>OntoThyroid</code> (30 classes, 16 règles SWRL), raisonneur Pellet sous Owlready2, requêtes sémantiques SPARQL, politique d'abstention prudente et sécurisation de la prescription chez le sujet âgé.
+                        <strong>Modélisation & Décision Métier (M4–M6) :</strong> Optimisation du seuil de classification selon la matrice de coût opérationnel, validation croisée <code>GroupKFold</code> par hôte, importance par permutation avec avertissement causal et fiche de modèle (*Model Card v1*).
                       </div>
                       <div class="hl-item">
-                        <strong>IA Sous-Symbolique (Fouille Weka) :</strong> Benchmark comparatif (J48, LMT, RandomTree, Naive Bayes), validation croisée 10 plis, extraction des seuils pivots (TSH ≤ 6,0 et FTI ≤ 64,0) et analyse fine des courbes ROC sous KnowledgeFlow.
+                        <strong>Deep Learning & Multimodal (M7–M10) :</strong> Réseau de neurones codé <em>from scratch</em> en NumPy avec validation analytique des gradients, MLP tabulaire PyTorch, étude d'ablation de régularisation sur 3 graines et fusion multimodale texte (Embeddings/TF-IDF) + tabulaire.
                       </div>
                     </div>
 
                     <div class="project-tech-pills">
-                      <span class="tech-pill">Protégé 5.6</span>
-                      <span class="tech-pill">OWL 2</span>
-                      <span class="tech-pill">SWRL</span>
-                      <span class="tech-pill">Pellet Reasoner</span>
-                      <span class="tech-pill">SPARQL</span>
-                      <span class="tech-pill">Weka Explorer</span>
-                      <span class="tech-pill">Arbre J48 (99,58 %)</span>
-                      <span class="tech-pill">Test du χ²</span>
-                      <span class="tech-pill">Matrice de Pearson</span>
-                      <span class="tech-pill">KnowledgeFlow (ROC)</span>
-                      <span class="tech-pill">EU AI Act</span>
+                      <span class="tech-pill">Python 3.12</span>
+                      <span class="tech-pill">scikit-learn</span>
+                      <span class="tech-pill">PyTorch</span>
+                      <span class="tech-pill">pandas</span>
+                      <span class="tech-pill">NumPy</span>
+                      <span class="tech-pill">ColumnTransformer</span>
+                      <span class="tech-pill">GroupKFold</span>
+                      <span class="tech-pill">Pipelines ML</span>
+                      <span class="tech-pill">Decision Log</span>
+                      <span class="tech-pill">Model Card</span>
+                      <span class="tech-pill">Matrice de Coût</span>
+                      <span class="tech-pill">Deep Learning</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="project-actions">
-                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="thyroide">
+                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="barcelone">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                     <span>Consulter la synthèse détaillée</span>
                   </button>
-                  <a href="Pathologies_Thyroidiennes.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le rapport complet au format PDF">
+                  <a href="Projet_Longitudinal_M0_a_M10.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le cahier complet d'analyse au format PDF">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                    <span>Lire le rapport (PDF - 41p)</span>
+                    <span>Lire le cahier (PDF - 53p)</span>
+                  </a>
+                  <a href="Projet_Longitudinal_M0_a_M10.html" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Consulter le Notebook interactif avec sorties et visualisations">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <span>Notebook interactif (HTML)</span>
                   </a>
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- PROJECT 2: Lésions Kystiques du Pancréas -->
+          <!-- PROJECT 2: Système d’Aide à la Décision Médicale pour les Pathologies Thyroïdiennes -->
+          <article class="project-card standard-project" data-category="sante">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="meta-tag tag-sante">🏥 IA Médicale & SADM Hybride</span>
+                <span class="meta-tag tag-date">Septembre 2026 · M1 MIAS</span>
+                <span class="meta-tag tag-school">Centrale Lille & Univ. Lille (UFR3S)</span>
+              </div>
+              <h3 class="project-title">Système d’Aide à la Décision Médicale pour les Pathologies Thyroïdiennes</h3>
+              <p class="project-subtitle-text">
+                <em>De l’analyse exploratoire des données à l’hybridation d’une ontologie sous Protégé (OWL, SPARQL, SWRL) et d’arbres de décision sous Weka.</em>
+              </p>
+            </div>
+
+            <div class="project-card-content">
+              <p class="project-desc">
+                Conception d’un SADM hybride robuste conciliant l'analyse statistique exploratoire (χ², Pearson), l'apprentissage supervisé sous Weka (arbre J48 à 99,58 % d'exactitude sur 3 772 patients UCI) et le raisonnement déductif d'une ontologie OWL 2 sous Protégé pour sécuriser le diagnostic et la posologie gériatrique selon l’EU AI Act.
+              </p>
+
+              <!-- Quick Glance Badges -->
+              <div class="card-glance-badges">
+                <span class="glance-badge">📑 Rapport 41p (PDF)</span>
+                <span class="glance-badge">🔬 3 772 patients (UCI)</span>
+                <span class="glance-badge">🌲 J48 (99,58 %) + OntoThyroid</span>
+                <span class="glance-badge">⚖️ Explicabilité & EU AI Act</span>
+              </div>
+
+              <!-- Collapsible Drawer Toggle -->
+              <button class="drawer-toggle-btn" aria-expanded="false" data-open-text="Masquer les détails ▴" data-closed-text="＋ Points clés & démarche ▾">
+                <span class="toggle-text">＋ Points clés & démarche ▾</span>
+                <span class="toggle-arrow">▾</span>
+              </button>
+
+              <div class="card-expand-drawer">
+                <div class="drawer-inner-content">
+                  <div class="project-keypoints">
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span><strong>Analyse Exploratoire & Biomarqueurs :</strong> Assainissement de la cohorte UCI (3 772 patients), test d'indépendance du χ² (p = 1,31×10⁻⁶), étude de colinéarité de Pearson (r = +0,793 entre TT4 et FTI) et traitement du déséquilibre de classes.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span><strong>IA Symbolique (Protégé & Pellet) :</strong> Ontologie formelle <code>OntoThyroid</code> (30 classes, 16 règles SWRL), raisonneur Pellet sous Owlready2, requêtes sémantiques SPARQL, politique d'abstention prudente et sécurisation gériatrique.</span>
+                    </div>
+                    <div class="keypoint">
+                      <span class="kp-icon">✦</span>
+                      <span><strong>IA Sous-Symbolique (Fouille Weka) :</strong> Benchmark comparatif (J48, LMT, RandomTree, Naive Bayes), validation croisée 10 plis, extraction des seuils pivots (TSH ≤ 6,0 et FTI ≤ 64,0) et analyse fine des courbes ROC sous KnowledgeFlow.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-pills">
+                    <span class="tech-pill">Protégé 5.6</span>
+                    <span class="tech-pill">OWL 2</span>
+                    <span class="tech-pill">SWRL</span>
+                    <span class="tech-pill">Pellet Reasoner</span>
+                    <span class="tech-pill">SPARQL</span>
+                    <span class="tech-pill">Weka Explorer</span>
+                    <span class="tech-pill">Arbre J48 (99,58 %)</span>
+                    <span class="tech-pill">Matrice de Pearson</span>
+                    <span class="tech-pill">EU AI Act</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="authors-micro">Peguy B., De Souza M., Phan N., Robin A. (Dir. Pr. S. Hammadi)</div>
+              <div class="project-btn-group">
+                <button class="btn btn-outline-pink btn-sm open-modal-btn" data-project="thyroide">Détails</button>
+                <a href="Pathologies_Thyroidiennes.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-sm">
+                  <span>Rapport (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Lésions Kystiques du Pancréas -->
           <article class="project-card standard-project" data-category="sante">
             <div class="project-card-header">
               <div class="project-meta-top">
@@ -963,8 +1045,7 @@
               </div>
             </div>
           </article>
-
-          <!-- PROJECT 3: SVD & Auto-encodeurs Linéaires -->
+          <!-- PROJECT 4: SVD & Auto-encodeurs Linéaires -->
           <article class="project-card standard-project" data-category="maths">
             <div class="project-card-header">
               <div class="project-meta-top">
@@ -1035,7 +1116,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 4: Théorie des Distributions -->
+          <!-- PROJECT 5: Théorie des Distributions -->
           <article class="project-card standard-project" data-category="maths">
             <div class="project-card-header">
               <div class="project-meta-top">
@@ -1105,7 +1186,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 5: Agenda C++ -->
+          <!-- PROJECT 6: Agenda C++ -->
           <article class="project-card standard-project" data-category="code">
             <div class="project-card-header">
               <div class="project-meta-top">
@@ -1172,7 +1253,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 6: La Nuit de l'Info -->
+          <!-- PROJECT 7: La Nuit de l'Info -->
           <article class="project-card standard-project" data-category="code">
             <div class="project-card-header">
               <div class="project-meta-top">

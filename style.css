@@ -2241,6 +2241,12 @@ button {
   border: 1px solid var(--pastel-lavender-border);
 }
 
+.tag-data {
+  background: var(--pastel-sky);
+  color: var(--pastel-sky-text);
+  border: 1px solid var(--pastel-sky-border);
+}
+
 .tag-date {
   background: #f4f2f6;
   color: var(--text-body);

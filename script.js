@@ -28,6 +28,30 @@ document.addEventListener('DOMContentLoaded', () => {
       results: "Démonstration de la supériorité d'une architecture hybride : l'IA symbolique garantit une explicabilité médicale totale et le respect absolu des recommandations cliniques internationales, tandis que l'IA sous-symbolique apporte une flexibilité prédictive sur les profils atypiques."
     },
 
+    barcelone: {
+      category: '📊 Data Science & Machine Learning',
+      tagClass: 'tag-data',
+      date: 'Automne 2026 · Master 1 MIAS',
+      school: 'Centrale Lille & ILIS Université de Lille',
+      title: "Tarification & Régulation du Marché Locatif de Barcelone (Inside Airbnb)",
+      subtitle: "Cahier intégral d'analyse prédictive et prescriptive (Jalons M0 à M10) : ingénierie de données, modèles tabulaires, Deep Learning PyTorch et fusion multimodale",
+      authors: "Phan Naelle · Master 1 MIAS (Centrale Lille / ILIS)",
+      pdfLink: "Projet_Longitudinal_M0_a_M10.pdf",
+      pdfLabel: "Ouvrir le cahier complet (53 pages - PDF)",
+      secondaryLink: "Projet_Longitudinal_M0_a_M10.html",
+      secondaryLabel: "Consulter le Notebook interactif (HTML)",
+      context: "Ce projet longitudinal de Master 1 MIAS applique l'ensemble du cycle méthodologique de la Data Science sur un jeu de données réel et complexe de 15 293 annonces Inside Airbnb à Barcelone (90 variables brutes). Il répond à une double problématique décisionnelle : estimer honnêtement le tarif à la nuitée pour un investisseur privé (Client B - régression) et réguler les annonces multipropriétaires non conformes pour la municipalité (Client A - classification sous contrainte de matrice de coût opérationnel).",
+      architecture: [
+        "Discipline Split-First & Zéro Data Leakage (M0–M2) : Scellement immédiat du jeu de test (Sealed Test Set) avant toute manipulation. Nettoyage raisonné, détection des mécanismes de valeurs manquantes (MCAR, MAR, MNAR) et consignation exhaustive de chaque choix dans un Journal de Décisions formel (Decision Log).",
+        "Pipelines scikit-learn & Audit des Fuites (M2–M3) : Conception de pipelines hermétiques avec <code>ColumnTransformer</code> (imputation, standardisation, Target Encoding / OneHotEncoder sur 69 quartiers et 10 districts). Audit chiffré démontrant le biais d'inflation artificielle causé par la fuite de variables cibles dérivées.",
+        "Régression & Analyse des Résidus (M3–M4) : Modélisation comparative (Ridge, Lasso, Random Forest), analyse approfondie des résidus démontrant l'hétéroscédasticité et justification théorique de la transformation logarithmique de la variable cible.",
+        "Classification & Arbitrage de Coût Métier (M4–M6) : Benchmark supervisé (Régression Logistique, Random Forest, Gradient Boosting), courbe de coût opérationnel pénalisant les faux négatifs (amendes non recouvrées) par rapport aux faux positifs (inspections inutiles), et détermination du seuil de coupure optimal.",
+        "Validation Croisée Groupée & Model Card (M5–M6) : Validation croisée <code>GroupKFold</code> par identifiant d'hôte (host_id) pour prémunir les modèles contre la fuite inter-groupes, importance par permutation avec avertissement causal, audit d'équité spatiale sur les 10 districts et rédaction d'une Model Card v1 normalisée.",
+        "Deep Learning from Scratch & PyTorch (M7–M10) : Implémentation d'un réseau de neurones complet codé de zéro en NumPy avec validation analytique des gradients, Perceptron Multicouche (MLP) sous PyTorch, étude d'ablation rigoureuse de régularisation sur 3 graines (Dropout, BatchNorm, Weight Decay) et fusion multimodale texte (Embeddings / TF-IDF) + tabulaire."
+      ],
+      results: "Livrable exhaustif de 53 pages couvrant les 11 jalons (M0 à M10) : démonstration de la supériorité des modèles arborescents d'ensemble sur les données tabulaires hétérogènes, diagnostic lucide des limites du Deep Learning sur les petits jeux tabulaires, et recommandations stratégiques à haute valeur décisionnelle pour les deux clients."
+    },
+
     thyroide: {
       category: '🏥 IA Médicale & SADM Hybride',
       date: 'Septembre 2026 · Master 1 MIAS',
@@ -150,6 +174,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: "🏛️ Découvrir mon Master MIAS", url: "#formations", target: "_self" }
       ],
       keywords: ["sih", "hopital", "hôpital", "clinique", "pancreas", "pancréas", "sadm", "sante", "santé", "protégé", "protege", "owl", "swrl", "sparql", "hammadi", "soignant", "rgpd", "ethique", "éthique", "dmn"]
+    },
+    barcelone: {
+      title: "Cahier d'Analyse Data Science : Barcelone (M0 à M10)",
+      text: "Projet longitudinal majeur de Master 1 MIAS sur 15 293 annonces Inside Airbnb : discipline Split-First et scellement du jeu de test (zéro data leakage), pipelines scikit-learn (ColumnTransformer, encodage haute cardinalité), validation croisée GroupKFold par hôte, benchmark régression/classification avec optimisation du seuil sous contrainte de coût métier, réseaux de neurones (NumPy from scratch & PyTorch), étude d'ablation sur 3 graines et fusion multimodale texte + tabulaire.",
+      actions: [
+        { label: "📊 Voir le cahier d'analyse 53p (PDF)", url: "Projet_Longitudinal_M0_a_M10.pdf", target: "_blank" },
+        { label: "📓 Consulter le Notebook interactif (HTML)", url: "Projet_Longitudinal_M0_a_M10.html", target: "_blank" },
+        { label: "📂 Voir la fiche projet", url: "#projets", target: "_self" }
+      ],
+      keywords: ["barcelone", "barcelona", "airbnb", "locatif", "m0", "m10", "data science", "machine learning", "deep learning", "pytorch", "scikit-learn", "pipeline", "columntransformer", "groupkfold", "leakage", "data leakage", "regression", "classification", "ablation", "decision log", "model card"]
     },
     pancreas: {
       title: "Mémoire Recherche : IA & Kystes Pancréatiques (28p)",
@@ -607,13 +641,13 @@ document.addEventListener('DOMContentLoaded', () => {
     python: {
       icon: "🐍",
       category: "Data Science & Machine Learning",
-      title: "Python — Fouille de Données & Apprentissage Supervisé",
-      desc: "Développement d'algorithmes prédictifs et d'analyses statistiques médicales : manipulation de jeux de données cliniques (pandas, NumPy), entraînement et comparaison de multiples classifieurs supervisés (Random Forest, régression logistique, arbres de décision) et étude fine des courbes ROC et AUC.",
-      tools: "Python (scikit-learn, pandas, NumPy), Weka Explorer",
-      project: "Système d'Aide au Diagnostic des Kystes du Pancréas (28 pages)",
-      impact: "Sensibilité prédictive optimisée et prévention du surapprentissage",
-      actionLabel: "Lire le rapport Pancréas (PDF)",
-      actionUrl: "Cancer_du_pancreas.pdf"
+      title: "Python — Data Science, Machine Learning & Deep Learning",
+      desc: "Développement de pipelines prédictifs complets et d'analyses statistiques : ingestion et nettoyage étanche (pandas, NumPy), pipelines scikit-learn (ColumnTransformer, GroupKFold), benchmark supervisé (Random Forest, régression logistique, gradient boosting), réseaux de neurones MLP PyTorch et étude d'ablation.",
+      tools: "Python (scikit-learn, PyTorch, pandas, NumPy), Weka Explorer",
+      project: "Cahier d'Analyse Barcelone M0-M10 (53 pages) & SADM Pancréas (28 pages)",
+      impact: "Zéro data leakage, optimisation des décisions sous matrice de coût et modèles validés",
+      actionLabel: "Voir le cahier Data Science (PDF)",
+      actionUrl: "Projet_Longitudinal_M0_a_M10.pdf"
     },
     owl: {
       icon: "🦉",
@@ -895,17 +929,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let pdfActionHtml = '';
     if (data.pdfLink) {
-      pdfActionHtml = `
+      pdfActionHtml += `
         <a href="${data.pdfLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-md">
           <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
           <span>${data.pdfLabel || 'Télécharger le PDF'}</span>
         </a>
       `;
     }
+    if (data.secondaryLink) {
+      pdfActionHtml += `
+        <a href="${data.secondaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="8" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>${data.secondaryLabel || 'Consulter le Notebook'}</span>
+        </a>
+      `;
+    }
 
     modalBody.innerHTML = `
       <div class="modal-header-meta">
-        <span class="meta-tag tag-sante">${data.category}</span>
+        <span class="meta-tag ${data.tagClass || 'tag-sante'}">${data.category}</span>
         <span class="meta-tag tag-date">${data.date}</span>
         <span class="meta-tag tag-school">${data.school}</span>
       </div>
