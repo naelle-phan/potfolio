@@ -810,7 +810,7 @@
                 <div class="project-img-frame">
                   <img src="bordeaux-macos-folder.png" alt="Cahier d'analyse Data Science Barcelone" class="folder-cover-img">
                   <div class="project-badge-overlay">
-                    <span class="badge-tag">Cahier 53 pages · PDF</span>
+                    <span class="badge-tag">Notebook interactif · HTML</span>
                   </div>
                 </div>
                 <div class="authorship-box">
@@ -841,7 +841,7 @@
 
                 <!-- Quick Glance Badges -->
                 <div class="card-glance-badges">
-                  <span class="glance-badge">📓 Cahier M0 à M10 (53p)</span>
+                  <span class="glance-badge">📓 Cahier M0 à M10</span>
                   <span class="glance-badge">🛡️ Zéro Data Leakage</span>
                   <span class="glance-badge">⚡ scikit-learn + PyTorch</span>
                   <span class="glance-badge">📈 Matrice de coût & GroupKFold</span>
@@ -885,14 +885,10 @@
                 </div>
 
                 <div class="project-actions">
-                  <button class="btn btn-primary-pink btn-md open-modal-btn" data-project="barcelone">
+                  <button type="button" class="btn btn-primary-pink btn-md open-modal-btn" data-project="barcelone" onclick="if(window.openProjectModal)window.openProjectModal('barcelone')">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                     <span>Consulter la synthèse détaillée</span>
                   </button>
-                  <a href="Projet_Longitudinal_M0_a_M10.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Ouvrir le cahier complet d'analyse au format PDF">
-                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                    <span>Lire le cahier (PDF - 53p)</span>
-                  </a>
                   <a href="Projet_Longitudinal_M0_a_M10.html" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md" title="Consulter le Notebook interactif avec sorties et visualisations">
                     <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                     <span>Notebook interactif (HTML)</span>
@@ -1853,7 +1849,8 @@
     </div>
   </div>
 
-  <!-- Toast Notification Container -->
+  <!-- Scripts -->
+  <script src="script.js?v=3.1"></script>
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
   <!-- Scripts -->

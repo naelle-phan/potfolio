@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Tarification & Régulation du Marché Locatif de Barcelone (Inside Airbnb)",
       subtitle: "Cahier intégral d'analyse prédictive et prescriptive (Jalons M0 à M10) : ingénierie de données, modèles tabulaires, Deep Learning PyTorch et fusion multimodale",
       authors: "Phan Naelle · Master 1 MIAS (Centrale Lille / ILIS)",
-      pdfLink: "Projet_Longitudinal_M0_a_M10.pdf",
-      pdfLabel: "Ouvrir le cahier complet (53 pages - PDF)",
+      pdfLink: null,
+      pdfLabel: null,
       secondaryLink: "Projet_Longitudinal_M0_a_M10.html",
       secondaryLabel: "Consulter le Notebook interactif (HTML)",
       context: "Ce projet longitudinal de Master 1 MIAS applique l'ensemble du cycle méthodologique de la Data Science sur un jeu de données réel et complexe de 15 293 annonces Inside Airbnb à Barcelone (90 variables brutes). Il répond à une double problématique décisionnelle : estimer honnêtement le tarif à la nuitée pour un investisseur privé (Client B - régression) et réguler les annonces multipropriétaires non conformes pour la municipalité (Client A - classification sous contrainte de matrice de coût opérationnel).",
@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Cahier d'Analyse Data Science : Barcelone (M0 à M10)",
       text: "Projet longitudinal majeur de Master 1 MIAS sur 15 293 annonces Inside Airbnb : discipline Split-First et scellement du jeu de test (zéro data leakage), pipelines scikit-learn (ColumnTransformer, encodage haute cardinalité), validation croisée GroupKFold par hôte, benchmark régression/classification avec optimisation du seuil sous contrainte de coût métier, réseaux de neurones (NumPy from scratch & PyTorch), étude d'ablation sur 3 graines et fusion multimodale texte + tabulaire.",
       actions: [
-        { label: "📊 Voir le cahier d'analyse 53p (PDF)", url: "Projet_Longitudinal_M0_a_M10.pdf", target: "_blank" },
         { label: "📓 Consulter le Notebook interactif (HTML)", url: "Projet_Longitudinal_M0_a_M10.html", target: "_blank" },
         { label: "📂 Voir la fiche projet", url: "#projets", target: "_self" }
       ],
@@ -644,10 +643,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Python — Data Science, Machine Learning & Deep Learning",
       desc: "Développement de pipelines prédictifs complets et d'analyses statistiques : ingestion et nettoyage étanche (pandas, NumPy), pipelines scikit-learn (ColumnTransformer, GroupKFold), benchmark supervisé (Random Forest, régression logistique, gradient boosting), réseaux de neurones MLP PyTorch et étude d'ablation.",
       tools: "Python (scikit-learn, PyTorch, pandas, NumPy), Weka Explorer",
-      project: "Cahier d'Analyse Barcelone M0-M10 (53 pages) & SADM Pancréas (28 pages)",
+      project: "Cahier d'Analyse Barcelone M0-M10 & SADM Pancréas (28 pages)",
       impact: "Zéro data leakage, optimisation des décisions sous matrice de coût et modèles validés",
-      actionLabel: "Voir le cahier Data Science (PDF)",
-      actionUrl: "Projet_Longitudinal_M0_a_M10.pdf"
+      actionLabel: "Consulter le Notebook interactif",
+      actionUrl: "Projet_Longitudinal_M0_a_M10.html"
     },
     owl: {
       icon: "🦉",
@@ -927,20 +926,21 @@ document.addEventListener('DOMContentLoaded', () => {
       featuresHtml += `<li>${point}</li>`;
     });
 
-    let pdfActionHtml = '';
-    if (data.pdfLink) {
-      pdfActionHtml += `
-        <a href="${data.pdfLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-md">
-          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-          <span>${data.pdfLabel || 'Télécharger le PDF'}</span>
+    let actionButtonsHtml = '';
+    if (data.secondaryLink) {
+      const btnStyle = data.pdfLink ? 'btn btn-soft-pink btn-md' : 'btn btn-primary-pink btn-md';
+      actionButtonsHtml += `
+        <a href="${data.secondaryLink}" target="_blank" rel="noopener noreferrer" class="${btnStyle}">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>${data.secondaryLabel || 'Consulter le Notebook'}</span>
         </a>
       `;
     }
-    if (data.secondaryLink) {
-      pdfActionHtml += `
-        <a href="${data.secondaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-soft-pink btn-md">
-          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="8" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>${data.secondaryLabel || 'Consulter le Notebook'}</span>
+    if (data.pdfLink) {
+      actionButtonsHtml += `
+        <a href="${data.pdfLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pink btn-md">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          <span>${data.pdfLabel || 'Télécharger le PDF'}</span>
         </a>
       `;
     }
@@ -971,7 +971,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="modal-p">${data.results}</p>
 
       <div class="modal-footer-actions">
-        ${pdfActionHtml}
+        ${actionButtonsHtml}
         <button class="btn btn-soft-pink btn-md" id="modal-inner-close">Fermer la vue</button>
       </div>
     `;
@@ -992,11 +992,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
+  // Expose globally for inline onclick fallback
+  window.openProjectModal = openProjectModal;
+
+  // Direct listener + document-level event delegation for 100% click guarantee
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.open-modal-btn');
+    if (btn) {
+      e.preventDefault();
+      const projectId = btn.getAttribute('data-project');
+      if (projectId) {
+        openProjectModal(projectId);
+      }
+    }
+  });
+
   openModalButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const projectId = btn.getAttribute('data-project');
-      openProjectModal(projectId);
+      if (projectId) {
+        openProjectModal(projectId);
+      }
     });
   });
 
