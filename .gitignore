@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+update_cv.py
+
+# Fichiers de travail, tests et extractions locales
+test_*
+extracted_*
+cv_page_*.png
+cv_modifie_page_1.png
+CV_Naelle_Phan_backup.pdf
+CV_Naelle_Phan_Sante.pdf
+CV_Naelle_Phan_modifie.pdf
+CV_Naelle_Phan_General.pdf
+test_edge.pdf
+tabler-icons.ttf
+cloudflare-worker.js
+Inter[opsz,wght].ttf
+Inter-Italic[opsz,wght].ttf
+Inter.ttf
+inter_bold.ttf
+inter_regular.ttf
+fig_thyroide_*
+plot_barcelone_*
+!fig_thyroide_p18_0.png
+!plot_barcelone_1.png
