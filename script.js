@@ -1,5 +1,5 @@
 /**
- * Portfolio Naelle Phan — filtres, détails des projets et contact.
+ * Portfolio Naelle Phan — détails des projets, navigation et vidéo d'accueil.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       pdfLabel: null,
       secondaryLink: "Projet_Longitudinal_M0_a_M10.html",
       secondaryLabel: "Consulter le Notebook interactif (HTML)",
+      tools: "Python 3.12 · pandas · NumPy · scikit-learn · PyTorch · matrice de coût",
       context: "Ce projet longitudinal de Master 1 MIAS applique l'ensemble du cycle méthodologique de la Data Science sur un jeu de données réel et complexe de 15 293 annonces Inside Airbnb à Barcelone (90 variables brutes). Il répond à une double problématique décisionnelle : estimer honnêtement le tarif à la nuitée pour un investisseur privé (Client B - régression) et réguler les annonces multipropriétaires non conformes pour la municipalité (Client A - classification sous contrainte de matrice de coût opérationnel).",
       architecture: [
         "Discipline Split-First & Zéro Data Leakage (M0–M2) : Scellement immédiat du jeu de test (Sealed Test Set) avant toute manipulation. Nettoyage raisonné, détection des mécanismes de valeurs manquantes (MCAR, MAR, MNAR) et consignation exhaustive de chaque choix dans un Journal de Décisions formel (Decision Log).",
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       authors: "Peguy Baptiste, De Souza Maryla, Phan Naelle, Robin Alexis (sous la direction du Pr. Slim Hammadi, Centrale Lille)",
       pdfLink: "Pathologies_Thyroidiennes.pdf",
       pdfLabel: "Ouvrir le rapport complet (41 pages - PDF)",
+      tools: "Weka Explorer · Protégé 5.6 · OWL 2 · SWRL · raisonneur Pellet · SPARQL",
       context: "En endocrinologie, le diagnostic des affections thyroïdiennes (nodules et dysthyroïdies) repose sur des bilans biologiques multidimensionnels aux signaux parfois trompeurs et soumis à un déséquilibre extrême des classes (92,3 % de patients euthyroïdiens). L'enjeu est de concilier la puissance diagnostique de l'apprentissage statistique supervisé avec la traçabilité explicable et la sécurité clinique imposées par l'EU AI Act.",
       architecture: [
         "Cohorte clinique & Analyse Exploratoire : Assainissement rigoureux de 9 172 dossiers bruts de l'archive UCI pour isoler une cohorte homogène de 3 772 patients (élimination des biais de grossesse, chirurgie et traitements hormonaux substitutifs). Démonstration formelle de dépendance par le test d'indépendance du χ² (χ²obs = 30,11 ≫ 16,27, p = 1,31×10⁻⁶) et analyse de colinéarité de Pearson (r = +0,793 entre TT4 et FTI).",
@@ -205,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <h2 class="modal-title" id="modal-title">${data.title}</h2>
       <p class="modal-subtitle">${data.subtitle}</p>
       <p class="modal-authors"><strong>Auteurs et direction :</strong> ${data.authors}</p>
+      ${data.tools ? `<p class="modal-tools"><strong>Outils :</strong> ${data.tools}</p>` : ''}
       <h3 class="modal-section-title">Contexte et problématique</h3>
       <p class="modal-p">${data.context}</p>
       ${figureHtml}
@@ -293,10 +296,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // L'animation ne modifie jamais le contenu : sans JS, sans observer ou en
   // mouvement réduit, tous les éléments restent visibles.
   const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+
+  const hero = document.getElementById('accueil');
+  const heroVideo = hero.querySelector('.hero-video');
+  const playHero = () => {
+    if (reducedMotion?.matches) {
+      heroVideo.pause();
+      return;
+    }
+    const playback = heroVideo.play();
+    playback?.then(() => hero.classList.remove('video-unavailable'))
+      .catch(() => hero.classList.add('video-unavailable'));
+  };
+  heroVideo.addEventListener('error', () => hero.classList.add('video-unavailable'));
+  heroVideo.querySelector('source').addEventListener('error', () => hero.classList.add('video-unavailable'));
+  if (heroVideo.networkState === heroVideo.NETWORK_NO_SOURCE) hero.classList.add('video-unavailable');
+  reducedMotion?.addEventListener?.('change', playHero);
+  playHero();
+
   if (typeof IntersectionObserver === 'function' && reducedMotion && !reducedMotion.matches) {
     const revealTargets = document.querySelectorAll(
       '.hero-eyebrow, .hero-title-clean, .hero-lead-clean, .hero-availability-clean, ' +
-      '.hero-actions-clean, .hero-scroll-cue, ' +
+      '.hero-actions-clean, ' +
       '.section-kicker, .section-heading > *, .showcase-card, .complementary-projects-head > *, ' +
       '.timeline-item, .experience-item, .engagements, ' +
       '.project-card, .skill-group, .curriculum-note, .contact-details, .contact-form-wrapper'
@@ -328,6 +349,14 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.classList.remove('motion-ready');
     }
   }
+
+  const siteHeader = document.getElementById('navbar');
+  const updateHeader = () => {
+    siteHeader.classList.toggle('is-light', hero.getBoundingClientRect().bottom <= siteHeader.offsetHeight + 100);
+  };
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  window.addEventListener('resize', updateHeader, { passive: true });
+  updateHeader();
 
   const navLinks = [...siteNav.querySelectorAll('.nav-link')];
   const sections = navLinks.map(link => document.querySelector(link.getAttribute('href')));
