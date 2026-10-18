@@ -1,6 +1,7 @@
 # Portfolio de Naelle Phan
 
 Site statique compatible GitHub Pages (`/potfolio/`) : `index.html`, `style.css` et `script.js` constituent l’interface. Le hero utilise la vidéo locale `101010-video-720.mp4` et son image fixe `video-poster.webp` (également affichée si la vidéo est indisponible ou si les animations sont réduites). Les images des projets, PDF et notebooks restent dans ce dossier ; les chemins sont relatifs.
+Les URL de `style.css` et `script.js` dans `index.html` portent une version : la changer lors d'une prochaine mise à jour de ces fichiers pour éviter que le cache de GitHub Pages associe une nouvelle page à d'anciennes ressources.
 
 ## Visualisation locale
 
